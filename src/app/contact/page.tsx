@@ -369,22 +369,17 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl">
           <motion.div {...fadeUp}>
             <div className="rounded-2xl bg-white border border-cream-dark overflow-hidden">
-              <div className="h-80 bg-gradient-to-br from-primary/5 to-accent/5 flex flex-col items-center justify-center text-center p-8">
-                <MapPin className="h-12 w-12 text-primary/30 mb-4" />
-                <p className="text-lg font-semibold text-slate">Map Coming Soon</p>
-                <p className="mt-2 text-sm text-foreground/50 max-w-md">
-                  To embed Google Maps: replace this div with an iframe from{" "}
-                  <a
-                    href="https://www.google.com/maps"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary underline"
-                  >
-                    Google Maps Embed API
-                  </a>
-                  . Search &quot;Canmore, AB&quot; and copy the embed code.
-                </p>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39856.29024396!2d-115.38!3d51.089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5370ca45910c4afd%3A0x4df75e5e34e84a3c!2sCanmore%2C%20AB!5e0!3m2!1sen!2sca!4v1711814400000!5m2!1sen!2sca"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Alpine E-Bike Tours — Canmore, Alberta"
+                className="rounded-2xl"
+              />
             </div>
           </motion.div>
         </div>
