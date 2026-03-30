@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Alpine E-Bike Tours Design System */
+
+  /* Primary — Deep Forest Teal */
+  --color-primary: #1A5C5C;
+  --color-primary-light: #237878;
+  --color-primary-dark: #134545;
+
+  /* Accent — Warm Amber/Gold */
+  --color-accent: #D4943A;
+  --color-accent-light: #E0A854;
+  --color-accent-dark: #B87D2E;
+
+  /* Secondary — Mountain Slate */
+  --color-slate: #3B4856;
+  --color-slate-light: #4D5D6E;
+  --color-slate-dark: #2A3440;
+
+  /* Neutrals — Warm Cream */
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE3;
+  --color-white: #FFFFFF;
+
+  /* Difficulty Colors (Industry Standard) */
+  --color-easy: #22c55e;
+  --color-moderate: #3b82f6;
+  --color-challenging: #1a1a1a;
+  --color-expert: #dc2626;
+
+  /* Functional */
+  --color-success: #2DA44E;
+  --color-warning: #D4943A;
+  --color-error: #dc2626;
+
+  /* Text */
+  --foreground: #2A3440;
+  --foreground-muted: #6B7B8D;
+  --background: #FAF7F2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-dark: var(--color-accent-dark);
+  --color-slate: var(--color-slate);
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-success: var(--color-success);
+  --color-easy: var(--color-easy);
+  --color-moderate: var(--color-moderate);
+  --color-challenging: var(--color-challenging);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-mono: var(--font-mono-code);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(26, 92, 92, 0.2);
+  color: var(--foreground);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
