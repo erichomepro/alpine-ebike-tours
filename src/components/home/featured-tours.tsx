@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Clock, MapPin, Star } from "lucide-react";
 import { tours } from "@/data/tours";
@@ -44,8 +45,18 @@ export function FeaturedTours() {
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden bg-slate/10">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
-                  {/* Placeholder — replace with real images */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 group-hover:scale-105 transition-transform duration-500" />
+                  {tour.heroImage ? (
+                    <Image
+                      src={tour.heroImage}
+                      alt={`${tour.name} — ${tour.tagline}`}
+                      fill
+                      unoptimized
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10 group-hover:scale-105 transition-transform duration-500" />
+                  )}
                   <span
                     className={cn(
                       "absolute top-4 left-4 z-20 rounded-full px-3 py-1 text-xs font-semibold",

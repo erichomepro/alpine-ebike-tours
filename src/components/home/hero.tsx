@@ -14,7 +14,7 @@ export function Hero() {
           <source src="/videos/hero-drone.mp4" type="video/mp4" />
         </video>
         */}
-        <div className="absolute inset-0 bg-[url('/images/tours/legacy-trail-hero.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/images/stock/hero-mountains.jpg')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
       </div>
 

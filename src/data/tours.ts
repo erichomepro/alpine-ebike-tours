@@ -13,7 +13,7 @@ export const tours: Tour[] = [
     difficulty: "easy",
     rating: 4.9,
     reviewCount: 0,
-    heroImage: "/images/tours/legacy-trail-hero.jpg",
+    heroImage: "/images/stock/mountain-scenic-1.jpg",
     gallery: [],
     included: [
       "Premium e-bike rental",
@@ -77,7 +77,7 @@ export const tours: Tour[] = [
     difficulty: "moderate",
     rating: 4.9,
     reviewCount: 0,
-    heroImage: "/images/tours/johnston-canyon-hero.jpg",
+    heroImage: "/images/stock/forest-trail.jpg",
     gallery: [],
     included: [
       "Premium e-bike rental",
@@ -130,7 +130,7 @@ export const tours: Tour[] = [
     difficulty: "easy",
     rating: 5.0,
     reviewCount: 0,
-    heroImage: "/images/tours/sunset-hero.jpg",
+    heroImage: "/images/stock/sunset-mountains.jpg",
     gallery: [],
     included: [
       "Premium e-bike rental",
@@ -180,7 +180,7 @@ export const tours: Tour[] = [
     difficulty: "moderate",
     rating: 4.8,
     reviewCount: 0,
-    heroImage: "/images/tours/bow-valley-hero.jpg",
+    heroImage: "/images/stock/river-valley.jpg",
     gallery: [],
     included: [
       "Premium e-bike rental",

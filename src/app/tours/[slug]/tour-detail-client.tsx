@@ -157,6 +157,7 @@ export function TourDetailClient({ tour, relatedTours }: TourDetailClientProps) 
           alt={tour.name}
           fill
           priority
+          unoptimized
           className="object-cover"
           sizes="100vw"
         />

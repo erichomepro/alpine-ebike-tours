@@ -8,7 +8,7 @@ export function CTASection() {
     <section className="relative py-24 px-4 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary" />
-      <div className="absolute inset-0 opacity-10 bg-[url('/images/trails/mountains-pattern.jpg')] bg-cover bg-center" />
+      <div className="absolute inset-0 opacity-10 bg-[url('/images/stock/rockies-landscape.jpg')] bg-cover bg-center" />
 
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <motion.h2

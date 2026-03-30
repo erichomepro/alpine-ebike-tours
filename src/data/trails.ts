@@ -12,7 +12,7 @@ export const trails: Trail[] = [
     batteryUsage: "25-35%",
     description:
       "The Legacy Trail is the crown jewel of cycling in the Canadian Rockies. This fully paved multi-use pathway stretches from Canmore to Banff along the Trans-Canada Highway corridor, offering jaw-dropping views of the Bow Valley, the Three Sisters, and Cascade Mountain. Built in 2010 to celebrate the 125th anniversary of Banff National Park, it's a scenic masterpiece that feels effortless on an e-bike. The trail follows the Bow River valley floor with gentle grades, making it accessible to riders of every ability. You'll pass through montane forest, open meadows, and alongside the sparkling Bow River — arriving in the iconic town of Banff ready for lunch and exploration.",
-    heroImage: "/images/trails/legacy-trail-hero.jpg",
+    heroImage: "/images/stock/mountain-scenic-1.jpg",
     gallery: [],
     season: "May — October",
     highlights: [
@@ -55,7 +55,7 @@ export const trails: Trail[] = [
     batteryUsage: "50-65%",
     description:
       "The Bow Valley Parkway (Highway 1A) is one of the most scenic roads in the Canadian Rockies — and one of the best wildlife corridors you can ride. Sections of the road are closed to motor vehicles during peak wildlife season, making it a cyclist's paradise. The route winds through dense old-growth forest, past towering limestone cliffs, and alongside the Bow River. On an e-bike, the moderate elevation gains feel manageable, and you'll have energy to spare for the optional hike into Johnston Canyon. This is a full-day adventure that rewards patience — wildlife sightings are frequent, and every bend reveals a new mountain vista.",
-    heroImage: "/images/trails/bow-valley-parkway-hero.jpg",
+    heroImage: "/images/stock/forest-trail.jpg",
     gallery: [],
     season: "June — September",
     highlights: [
@@ -98,7 +98,7 @@ export const trails: Trail[] = [
     batteryUsage: "20-30%",
     description:
       "The Montane Traverse weaves through the forests and meadows surrounding Canmore, offering an intimate mountain biking experience without the intimidation of technical terrain. Starting from the Canmore Nordic Centre, this trail network takes you through towering spruce and pine forest, across wildflower meadows, and up to viewpoints overlooking the Bow Valley. The mix of packed gravel and smooth singletrack is ideal for e-bikes — you'll feel the mountain beneath your tires without jarring bumps. It's the perfect ride for golden hour when the light filters through the trees and the mountains glow amber.",
-    heroImage: "/images/trails/montane-traverse-hero.jpg",
+    heroImage: "/images/stock/wildflowers-mountain.jpg",
     gallery: [],
     season: "May — October",
     highlights: [
@@ -139,7 +139,7 @@ export const trails: Trail[] = [
     batteryUsage: "15-25%",
     description:
       "The Horseshoe Loop is a scenic circuit near Canmore that follows the Bow River, loops past the Canmore Engine Bridge (a beloved local landmark), and winds through riverside meadows and light forest. The gentle terrain and well-maintained pathways make it one of the most accessible rides in the valley — perfect for families, first-time e-bikers, or anyone who wants a relaxed scenic ride without a shuttle. The loop format means you start and end at the same spot, and the mix of river views, mountain backdrops, and open meadows keeps the scenery constantly changing.",
-    heroImage: "/images/trails/horseshoe-loop-hero.jpg",
+    heroImage: "/images/stock/river-valley.jpg",
     gallery: [],
     season: "May — October",
     highlights: [
@@ -181,7 +181,7 @@ export const trails: Trail[] = [
     batteryUsage: "15-60%",
     description:
       "Built for the 1988 Winter Olympics, the Canmore Nordic Centre is now a world-class trail network with over 60 km of groomed paths winding through the montane forest of the Bow Valley. In summer, these cross-country ski trails transform into some of the best mountain biking in Alberta. The network offers routes for every level — from smooth, flat loops along the Bow River flats to punchy climbs up to Georgetown viewpoints. On an e-bike, you can sample trails that would normally require serious fitness, exploring further and climbing higher with a grin on your face. The centre itself has a day lodge, bike wash, and ample parking.",
-    heroImage: "/images/trails/nordic-centre-hero.jpg",
+    heroImage: "/images/stock/cycling-mountain.jpg",
     gallery: [],
     season: "May — October",
     highlights: [

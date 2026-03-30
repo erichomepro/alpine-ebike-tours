@@ -198,7 +198,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark via-primary to-primary-light" />
-        <div className="absolute inset-0 bg-[url('/images/tours/legacy-trail-hero.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/stock/mountain-lake.jpg')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <motion.p

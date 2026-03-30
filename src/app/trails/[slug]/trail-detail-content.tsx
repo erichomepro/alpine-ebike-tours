@@ -91,6 +91,7 @@ export function TrailDetailContent({
           src={trail.heroImage}
           alt={`${trail.name} trail in the Canadian Rockies`}
           fill
+          unoptimized
           className="object-cover"
           priority
           sizes="100vw"
