@@ -7,11 +7,9 @@ import { Menu, X, Phone } from "lucide-react";
 
 const navigation = [
   { name: "Tours", href: "/tours" },
-  { name: "Lake Louise", href: "/lake-louise-ski-resort" },
-  { name: "Trails", href: "/trails" },
-  { name: "Our Bikes", href: "/bikes" },
-  { name: "Blog", href: "/blog" },
+  { name: "Lake Louise 2027", href: "/lake-louise-ski-resort" },
   { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -22,7 +20,7 @@ export function Header() {
       {/* Announcement Bar */}
       <div className="bg-primary text-white text-center text-sm py-2 px-4">
         <p>
-          2026 Alberta Parks rides open — Lake Louise tours pre-booking for 2027 | Tours from <strong>$149</strong>
+          2026 Alberta Rail Trail rides now open — Lake Louise tours coming 2027 | Tours from <strong>$149</strong>
         </p>
       </div>
 

@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import {
   MapPin,
   Clock,
@@ -12,10 +10,10 @@ import {
   Mountain,
   Camera,
   Star,
-  ArrowRight,
   Check,
   Bike,
   ChevronRight,
+  AlertTriangle,
 } from "lucide-react";
 
 const fadeUp = {
@@ -24,36 +22,6 @@ const fadeUp = {
   viewport: { once: true, margin: "-50px" },
   transition: { duration: 0.6, ease: "easeOut" as const },
 };
-
-const tours = [
-  {
-    slug: "lake-louise-grand-loop",
-    name: "Lake Louise Grand Loop",
-    duration: "5-6 hours",
-    price: 275,
-    description:
-      "The full experience — brunch, Lake Louise, Moraine Lake, Rockpile Trail, packed lunch, and a thrilling downhill return.",
-    highlights: ["Brunch + lunch included", "Moraine Lake & Rockpile Trail", "~34 km loop"],
-  },
-  {
-    slug: "lake-louise-morning-experience",
-    name: "Lake Louise Morning Experience",
-    duration: "3-4 hours",
-    price: 175,
-    description:
-      "Brunch at the resort, e-bike to Lake Louise, lakeside walk, and ride back. The perfect half-day.",
-    highlights: ["Brunch included", "Lakeside walk", "~8 km round trip"],
-  },
-  {
-    slug: "moraine-lake-rockpile-adventure",
-    name: "Moraine Lake & Rockpile Adventure",
-    duration: "5-6 hours",
-    price: 225,
-    description:
-      "Ride the car-free Moraine Lake Road, hike the Rockpile Trail, and lunch at the Twenty Dollar View.",
-    highlights: ["Car-free road", "Twenty Dollar View", "Packed lunch included"],
-  },
-];
 
 const partnershipBenefits = [
   {
@@ -124,48 +92,54 @@ export function LakeLouiseContent() {
         <div className="absolute inset-0 bg-[url('/images/stock/lake-louise-ski-resort-summer.jpg')] bg-cover bg-center opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
         <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
-          <motion.p
+          <motion.div
             {...fadeUp}
-            className="text-accent-light font-semibold tracking-wide uppercase text-sm"
+            className="inline-flex items-center gap-2 rounded-full bg-amber-500/20 border border-amber-400/40 px-4 py-2 mb-6"
           >
-            Summer 2027 — Now accepting pre-bookings
-          </motion.p>
+            <AlertTriangle className="h-4 w-4 text-amber-300" />
+            <span className="text-amber-200 text-sm font-semibold">
+              Coming 2027 — Pending Parks Canada approval and ski hill parking approval
+            </span>
+          </motion.div>
           <motion.h1
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: 0.1 }}
-            className="mt-4 font-[var(--font-heading)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+            className="font-[var(--font-heading)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
           >
-            E-Bike Tours from
-            <br />
-            Lake Louise Ski Resort
+            Lake Louise &<br />
+            Moraine Lake E-Bike Tour
           </motion.h1>
           <motion.p
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: 0.2 }}
             className="mt-6 text-lg sm:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed"
           >
-            Premium guided e-bike tours to Lake Louise and Moraine Lake — departing
-            twice daily from the ski resort base area. Brunch and lunch included at
-            the resort restaurant.
+            One tour. Two iconic lakes. Departing twice daily from Lake Louise Ski
+            Resort. Brunch and lunch included.
           </motion.p>
           <motion.div
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: 0.35 }}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="mt-10"
           >
             <Link
-              href="/book"
+              href="/contact"
               className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
             >
-              Pre-Book for 2027
+              Register Interest
             </Link>
-            <a
-              href="#tours"
-              className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white px-8 py-4 text-lg font-semibold transition-all duration-200"
-            >
-              View Tour Options
-            </a>
           </motion.div>
+        </div>
+      </section>
+
+      {/* 2027 Notice Banner */}
+      <section className="bg-amber-50 border-b border-amber-200 px-4 py-6">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="text-amber-800 font-medium">
+            This tour is planned for the <strong>2027 season</strong> and is pending
+            Parks Canada approval and ski hill parking approval. This page is a preview
+            of what we&apos;re planning.
+          </p>
         </div>
       </section>
 
@@ -197,7 +171,7 @@ export function LakeLouiseContent() {
                 )}
                 <div className="rounded-2xl bg-cream p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="font-[var(--font-mono-code)] text-2xl font-bold text-accent">
+                    <span className="font-mono text-2xl font-bold text-accent">
                       {step.number}
                     </span>
                     <step.icon className="h-5 w-5 text-primary" />
@@ -216,8 +190,83 @@ export function LakeLouiseContent() {
         </div>
       </section>
 
-      {/* Why Lake Louise Ski Resort */}
+      {/* Tour Details */}
       <section className="py-20 px-4 bg-cream">
+        <div className="mx-auto max-w-4xl">
+          <motion.div {...fadeUp} className="text-center mb-12">
+            <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl font-bold text-slate">
+              Tour Details
+            </h2>
+          </motion.div>
+
+          <motion.div {...fadeUp} className="rounded-2xl bg-white border border-cream-dark p-8">
+            <h3 className="font-[var(--font-heading)] text-2xl font-semibold text-slate">
+              Lake Louise & Moraine Lake E-Bike Tour
+            </h3>
+            <p className="mt-3 text-foreground/70 leading-relaxed">
+              The full experience — brunch at the ski resort, ride to Lake Louise for a lakeside
+              walk, continue up the car-free Moraine Lake Road, hike the Rockpile Trail for the
+              Twenty Dollar View, enjoy a packed lunch lakeside, then coast downhill back to base.
+            </p>
+
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="text-center p-3 rounded-xl bg-cream">
+                <Clock className="h-5 w-5 text-primary mx-auto" />
+                <p className="mt-2 text-sm font-semibold text-slate">5-6 hours</p>
+                <p className="text-xs text-foreground/50">Duration</p>
+              </div>
+              <div className="text-center p-3 rounded-xl bg-cream">
+                <MapPin className="h-5 w-5 text-primary mx-auto" />
+                <p className="mt-2 text-sm font-semibold text-slate">~34 km</p>
+                <p className="text-xs text-foreground/50">Round trip</p>
+              </div>
+              <div className="text-center p-3 rounded-xl bg-cream">
+                <Users className="h-5 w-5 text-primary mx-auto" />
+                <p className="mt-2 text-sm font-semibold text-slate">Max 12</p>
+                <p className="text-xs text-foreground/50">Per group</p>
+              </div>
+              <div className="text-center p-3 rounded-xl bg-cream">
+                <Bike className="h-5 w-5 text-primary mx-auto" />
+                <p className="mt-2 text-sm font-semibold text-slate">Moderate</p>
+                <p className="text-xs text-foreground/50">E-bike assisted</p>
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <h4 className="font-semibold text-slate mb-3">What&apos;s Included</h4>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {[
+                  "Premium e-bike rental",
+                  "Helmet & safety gear",
+                  "Brunch at the ski resort restaurant",
+                  "Packed gourmet lunch",
+                  "Guided lakeside walk at Lake Louise",
+                  "Rockpile Trail hike at Moraine Lake",
+                  "All-day hydration & snacks",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/70">
+                    <Check className="h-4 w-4 text-green-600 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-6 flex items-center justify-between pt-6 border-t border-cream-dark">
+              <div>
+                <span className="text-3xl font-bold text-primary">$275</span>
+                <span className="text-sm text-foreground/50 ml-1">/person</span>
+              </div>
+              <div className="text-sm text-foreground/50">
+                Two departures daily: 8:00 AM & 12:00 PM
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why the Ski Resort */}
+      <section className="py-20 px-4 bg-white">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <motion.div {...fadeUp}>
@@ -246,7 +295,7 @@ export function LakeLouiseContent() {
                   "Summer sightseeing gondola available as an add-on",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-success mt-0.5 shrink-0" />
+                    <Check className="h-5 w-5 text-green-600 mt-0.5 shrink-0" />
                     <span className="text-foreground/80">{item}</span>
                   </li>
                 ))}
@@ -257,7 +306,6 @@ export function LakeLouiseContent() {
               transition={{ ...fadeUp.transition, delay: 0.15 }}
               className="rounded-2xl overflow-hidden bg-white shadow-lg aspect-[4/3]"
             >
-              {/* Placeholder for summer ski resort photo */}
               <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                 <div className="text-center p-8">
                   <Mountain className="h-16 w-16 text-primary/40 mx-auto" />
@@ -268,56 +316,6 @@ export function LakeLouiseContent() {
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Partnership Value — This section serves as the pitch to management */}
-      <section className="py-20 px-4 bg-white" id="partnership">
-        <div className="mx-auto max-w-6xl">
-          <motion.div {...fadeUp} className="text-center mb-16">
-            <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl font-bold text-slate">
-              A Partnership That Drives Revenue
-            </h2>
-            <p className="mt-4 text-lg text-foreground/70 max-w-3xl mx-auto">
-              Our e-bike tours bring consistent daily traffic to the ski resort base
-              area — 12 guests per day purchasing meals at the restaurant and
-              experiencing the resort during summer months.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {partnershipBenefits.map((benefit, i) => (
-              <motion.div
-                key={benefit.label}
-                {...fadeUp}
-                transition={{ ...fadeUp.transition, delay: i * 0.1 }}
-                className="rounded-2xl bg-cream p-6 text-center"
-              >
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
-                  <benefit.icon className="h-7 w-7 text-primary" />
-                </div>
-                <div className="mt-4 font-[var(--font-mono-code)] text-4xl font-bold text-primary">
-                  {benefit.stat}
-                </div>
-                <p className="mt-1 font-semibold text-slate">{benefit.label}</p>
-                <p className="mt-3 text-sm text-foreground/60 leading-relaxed">
-                  {benefit.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            {...fadeUp}
-            className="mt-12 rounded-2xl bg-primary/5 border border-primary/10 p-8 text-center"
-          >
-            <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl mx-auto">
-              <strong className="text-primary">Daily restaurant revenue:</strong> With
-              12 guests purchasing brunch before tours and packed lunches for the
-              trail, our operation generates consistent meal purchases through the
-              resort restaurant every operating day — June through October.
-            </p>
-          </motion.div>
         </div>
       </section>
 
@@ -359,109 +357,99 @@ export function LakeLouiseContent() {
                 the Rockpile Trail and enjoy a lakeside picnic. No parking stress, no
                 shuttle schedules, no crowds at the bus stop.
               </p>
-              <Link
-                href="/tours/moraine-lake-rockpile-adventure"
-                className="mt-8 inline-flex items-center gap-2 rounded-xl bg-accent hover:bg-accent-dark text-white px-6 py-3 font-semibold transition-all duration-200"
-              >
-                View Moraine Lake Tour
-                <ArrowRight className="h-4 w-4" />
-              </Link>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Tour Options */}
-      <section className="py-20 px-4 bg-white" id="tours">
+      {/* Partnership Value — Dave's pitch tool for the ski hill */}
+      <section className="py-20 px-4 bg-white" id="partnership">
         <div className="mx-auto max-w-6xl">
-          <motion.div {...fadeUp} className="text-center mb-14">
+          <motion.div {...fadeUp} className="text-center mb-16">
             <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl font-bold text-slate">
-              Tour Options
+              A Partnership That Drives Revenue
             </h2>
-            <p className="mt-4 text-lg text-foreground/70">
-              All tours depart from Lake Louise Ski Resort base area.
-              Brunch or lunch included with every tour.
+            <p className="mt-4 text-lg text-foreground/70 max-w-3xl mx-auto">
+              Our e-bike tours bring consistent daily traffic to the ski resort base
+              area — 12 guests per day purchasing meals at the restaurant and
+              experiencing the resort during summer months.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {tours.map((tour, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {partnershipBenefits.map((benefit, i) => (
               <motion.div
-                key={tour.slug}
+                key={benefit.label}
                 {...fadeUp}
                 transition={{ ...fadeUp.transition, delay: i * 0.1 }}
-                className="rounded-2xl bg-cream border border-cream-dark overflow-hidden"
+                className="rounded-2xl bg-cream p-6 text-center"
               >
-                <div className="p-6">
-                  <h3 className="font-[var(--font-heading)] text-xl font-semibold text-slate">
-                    {tour.name}
-                  </h3>
-                  <p className="mt-2 text-sm text-foreground/60 leading-relaxed">
-                    {tour.description}
-                  </p>
-                  <ul className="mt-4 space-y-2">
-                    {tour.highlights.map((h) => (
-                      <li key={h} className="flex items-center gap-2 text-sm text-foreground/70">
-                        <Check className="h-4 w-4 text-success shrink-0" />
-                        {h}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6 flex items-center justify-between pt-4 border-t border-cream-dark">
-                    <div>
-                      <span className="text-2xl font-bold text-primary">${tour.price}</span>
-                      <span className="text-sm text-foreground/50 ml-1">/person</span>
-                    </div>
-                    <span className="text-sm text-foreground/50">{tour.duration}</span>
-                  </div>
-                  <Link
-                    href={`/tours/${tour.slug}`}
-                    className="mt-4 block w-full text-center rounded-xl bg-primary hover:bg-primary-dark text-white px-4 py-3 font-semibold transition-colors min-h-[46px]"
-                  >
-                    View Tour Details
-                  </Link>
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
+                  <benefit.icon className="h-7 w-7 text-primary" />
                 </div>
+                <div className="mt-4 font-mono text-4xl font-bold text-primary">
+                  {benefit.stat}
+                </div>
+                <p className="mt-1 font-semibold text-slate">{benefit.label}</p>
+                <p className="mt-3 text-sm text-foreground/60 leading-relaxed">
+                  {benefit.description}
+                </p>
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            {...fadeUp}
+            className="mt-12 rounded-2xl bg-primary/5 border border-primary/10 p-8 text-center"
+          >
+            <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+              <strong className="text-primary">Daily restaurant revenue:</strong> With
+              12 guests purchasing brunch before tours and packed lunches for the
+              trail, our operation generates consistent meal purchases through the
+              resort restaurant every operating day — June through October.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* Pre-Booking CTA */}
+      {/* Register Interest CTA */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary" />
         <div className="absolute inset-0 bg-[url('/images/stock/moraine-lake-panorama.jpg')] bg-cover bg-center opacity-15" />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
+          <motion.div
+            {...fadeUp}
+            className="inline-flex items-center gap-2 rounded-full bg-amber-500/20 border border-amber-400/40 px-4 py-2 mb-6"
+          >
+            <AlertTriangle className="h-4 w-4 text-amber-300" />
+            <span className="text-amber-200 text-sm font-semibold">
+              Coming 2027
+            </span>
+          </motion.div>
           <motion.h2
             {...fadeUp}
             className="font-[var(--font-heading)] text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight"
           >
-            Summer 2027 Pre-Bookings Open
+            Interested in This Tour?
           </motion.h2>
           <motion.p
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: 0.15 }}
             className="mt-6 text-lg text-white/80 leading-relaxed"
           >
-            Be among the first to experience e-bike tours from Lake Louise Ski
-            Resort. Early bird pricing available for pre-bookings.
+            Register your interest and we&apos;ll notify you as soon as bookings
+            open for the 2027 season.
           </motion.p>
           <motion.div
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: 0.3 }}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="mt-10"
           >
             <Link
-              href="/book"
+              href="/contact"
               className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
             >
-              Pre-Book Now
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white px-8 py-4 text-lg font-semibold transition-all duration-200"
-            >
-              Contact Us
+              Register Interest
             </Link>
           </motion.div>
         </div>

@@ -8,29 +8,29 @@ const reviews = [
     author: "Sarah M.",
     location: "Calgary, AB",
     rating: 5,
-    text: "Absolutely incredible experience! E-biking to Moraine Lake on the car-free road was the highlight of our entire Rockies trip. Arriving by bike while everyone else was on shuttle buses felt like a secret shortcut to paradise. I'm 62 and had zero trouble.",
-    tour: "Moraine Lake & Rockpile Adventure",
+    text: "Absolutely incredible experience! The rail trail was beautiful and the trestle bridge took our breath away. I'm 62 and had zero trouble on the e-bike — it handles the hills for you.",
+    tour: "Rail Trail & Taunton Trestle Ride",
   },
   {
     author: "Mike & Jenny K.",
     location: "Vancouver, BC",
     rating: 5,
-    text: "The Grand Loop was the best day of our trip. Brunch at the ski resort, the turquoise water at Lake Louise, then riding the car-free road to Moraine Lake — and the Rockpile viewpoint took our breath away. That downhill return was pure joy.",
-    tour: "Lake Louise Grand Loop",
+    text: "What an incredible day. Riding through the foothills on an old railway trail was something totally different. The trestle bridge views were unreal and the packed lunch on the trail was a perfect touch.",
+    tour: "Rail Trail & Taunton Trestle Ride",
   },
   {
     author: "David R.",
     location: "Toronto, ON",
     rating: 5,
-    text: "I'm not a cyclist at all, but the e-bike changed everything. Within 5 minutes I felt totally comfortable. Seeing Lake Louise and Moraine Lake by bike instead of from a shuttle bus was a completely different experience. Already planning our next visit.",
-    tour: "Lake Louise Morning Experience",
+    text: "I'm not a cyclist at all, but the e-bike changed everything. Within 5 minutes I felt totally comfortable. The guide was fantastic and the scenery was world-class. Already planning our next visit.",
+    tour: "Rail Trail & Taunton Trestle Ride",
   },
   {
     author: "The Patterson Family",
     location: "Edmonton, AB",
     rating: 5,
-    text: "Perfect family activity! Our teenagers actually put their phones away when they saw Moraine Lake. The Rockpile Trail viewpoint — the Twenty Dollar View — is even more stunning in person. Can't recommend this enough.",
-    tour: "Lake Louise Grand Loop",
+    text: "Perfect family activity! Our teenagers actually put their phones away when we hit the trestle bridge. The whole experience was easy, fun, and something we'll remember forever. Can't recommend this enough.",
+    tour: "Rail Trail & Taunton Trestle Ride",
   },
 ];
 
@@ -53,10 +53,6 @@ export function SocialProof() {
           <h2 className="font-[var(--font-heading)] text-3xl sm:text-4xl font-bold text-slate">
             What Our Riders Say
           </h2>
-          <p className="mt-4 text-lg text-foreground/70 max-w-2xl mx-auto">
-            4.9 out of 5 stars from riders who discovered the Rockies on two
-            wheels.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
