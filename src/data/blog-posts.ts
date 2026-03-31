@@ -1,805 +1,388 @@
 import type { BlogPost } from "@/types";
 
+export type BlogCategory = "All" | "Trail Guides" | "Planning";
+
+export const blogCategories: BlogCategory[] = ["All", "Trail Guides", "Planning"];
+
 export const blogPosts: BlogPost[] = [
   {
-    slug: "complete-guide-to-ebiking-the-legacy-trail",
-    title: "The Complete Guide to E-Biking the Legacy Trail",
+    slug: "complete-guide-ebiking-moraine-lake-road",
+    title: "The Complete Guide to E-Biking Moraine Lake Road",
     excerpt:
-      "Everything you need to know about riding the 26.8 km Legacy Trail between Canmore and Banff on an e-bike — route details, what to expect, best stops, and insider tips from local guides.",
-    heroImage: "/images/blog/legacy-trail-guide.jpg",
+      "Moraine Lake Road is closed to private vehicles — but bikes are welcome. Here's everything you need to know about riding this stunning car-free mountain road on an e-bike.",
+    heroImage: "/images/blog/moraine-lake-road.jpg",
     author: "Dave Richardson",
-    publishedAt: "2026-03-15",
+    publishedAt: "2026-03-28",
     category: "Trail Guides",
     tags: [
-      "Legacy Trail",
-      "Canmore",
-      "Banff",
+      "Moraine Lake",
+      "Lake Louise",
       "trail guide",
       "e-bike route",
+      "car-free road",
       "Canadian Rockies",
     ],
-    readTime: "12 min read",
+    readTime: "10 min read",
     content: `
-      <p>The Legacy Trail is the crown jewel of cycling in the Canadian Rockies. Stretching 26.8 kilometres between Canmore and the town of Banff, this fully paved multi-use pathway winds through some of the most spectacular mountain scenery on Earth. And on an e-bike, it transforms from a serious cycling commitment into an accessible, joyful ride that anyone can enjoy.</p>
+      <p>Moraine Lake is one of the most photographed places in the Canadian Rockies — and for good reason. Turquoise water ringed by ten mountain peaks, a short hike to the viewpoint that used to grace the Canadian twenty dollar bill, and a setting so dramatic it almost looks artificial. The problem? Getting there.</p>
 
-      <p>Whether you are a first-time e-bike rider or a seasoned cyclist looking for effortless mountain views, this guide covers everything you need to know before hitting the Legacy Trail.</p>
+      <p>Since 2023, Moraine Lake Road has been <strong>permanently closed to private vehicles</strong>. Most visitors take Parks Canada shuttle buses, competing for limited seats on a fixed schedule. But there is another way — and it might be the best-kept secret in the Rockies.</p>
 
-      <h2 id="trail-overview">Trail Overview: What Makes the Legacy Trail Special</h2>
+      <p><strong>You can ride a bike to Moraine Lake.</strong> And on an e-bike, it is genuinely enjoyable.</p>
 
-      <p>Opened in 2010 to celebrate the 125th anniversary of Parks Canada, the Legacy Trail was purpose-built as a recreational pathway separate from the Trans-Canada Highway. Unlike riding on the shoulder of Highway 1 (which is both terrifying and technically illegal for cyclists in some sections), the Legacy Trail gives you a dedicated, vehicle-free corridor through the Bow Valley.</p>
+      <h2 id="the-route">The Route: What to Expect</h2>
 
-      <p>The trail surface is smooth asphalt throughout, with gentle grades that rarely exceed 5%. On an e-bike with pedal assist, even the uphill sections toward Banff feel like riding on flat ground. The total elevation gain from Canmore to Banff is approximately 140 metres, spread over 26.8 km — barely noticeable with electric assistance.</p>
+      <p>Moraine Lake Road is a 12 km paved road that climbs from the junction near Lake Louise village to Moraine Lake. The elevation gain is approximately 153 metres — spread over 12 kilometres, that is a gentle, consistent grade. On an e-bike with pedal assist, most riders barely notice the climb.</p>
 
-      <h3>Key Trail Stats</h3>
+      <h3>Key Stats</h3>
       <ul>
-        <li><strong>Distance:</strong> 26.8 km one way (Canmore to Banff)</li>
-        <li><strong>Surface:</strong> Paved asphalt, excellent condition</li>
-        <li><strong>Elevation gain:</strong> ~140 m (Canmore to Banff direction)</li>
-        <li><strong>Difficulty on e-bike:</strong> Easy — suitable for all fitness levels</li>
-        <li><strong>Time on e-bike:</strong> 1.5 to 2.5 hours one way (depending on stops)</li>
-        <li><strong>Season:</strong> Mid-May through mid-October (weather dependent)</li>
-        <li><strong>Trail hours:</strong> Dawn to dusk (no lighting)</li>
+        <li><strong>Distance:</strong> 12 km one way from the junction (14 km from Lake Louise village)</li>
+        <li><strong>Elevation gain:</strong> ~153 m</li>
+        <li><strong>Surface:</strong> Paved road, excellent condition</li>
+        <li><strong>Time on e-bike:</strong> 40-55 minutes uphill, 25-35 minutes downhill</li>
+        <li><strong>Season:</strong> June 1 to October 12 (varies annually)</li>
+        <li><strong>Traffic:</strong> Shuttle buses and licensed commercial vehicles only — no private cars</li>
       </ul>
 
-      <h2 id="which-direction">Which Direction Should You Ride?</h2>
+      <p>The road winds through dense subalpine forest of Engelmann spruce and subalpine fir. As you climb, the trees occasionally open to reveal glimpses of the surrounding peaks. The final approach to the lake is a sweeping curve that delivers the full panorama all at once — and it never gets old.</p>
 
-      <p>This is one of the most common questions we get, and the answer depends on your plans for the day.</p>
+      <h2 id="starting-point">Where to Start</h2>
 
-      <h3>Canmore to Banff (Recommended for Most Riders)</h3>
-      <p>Starting in Canmore and riding to Banff is the most popular direction, and for good reason. You get a net elevation gain, which means the return trip (Banff to Canmore) is slightly downhill — a welcome bonus at the end of a long ride. The mountain views ahead of you are stunning as you approach Banff, with Cascade Mountain growing larger with every kilometre.</p>
+      <p>Our tours start from <strong>Lake Louise Ski Resort</strong> base area, which adds approximately 4 km of riding along Lake Louise Drive before reaching the Moraine Lake Road junction. This means the full round trip from the ski resort to Moraine Lake and back is approximately 34 km — a comfortable half-day on an e-bike.</p>
 
-      <p>Starting from Canmore also means you can reward yourself with lunch or a cold drink in Banff before heading back. The town of Banff has dozens of restaurants, cafes, and ice cream shops within a short ride of the trail terminus.</p>
+      <p>The ski resort offers free parking, a restaurant for brunch before your ride, and a proper staging area for bike fitting and safety briefing. It is the ideal starting point.</p>
 
-      <h3>Banff to Canmore (Quieter Start)</h3>
-      <p>If you prefer a quieter ride, starting from Banff can be strategic. Most riders begin from the Canmore end, so heading the opposite direction means you will encounter fewer people in the first half of your ride. The views looking back toward the Three Sisters peaks from the Banff side are also exceptional.</p>
+      <h2 id="the-advantage">The E-Bike Advantage</h2>
 
-      <blockquote>
-        <p><strong>Pro tip:</strong> On an e-bike, direction matters less than on a traditional bike. The motor easily handles the gentle grade in either direction, so choose based on where you want to end up for lunch rather than the elevation profile.</p>
-      </blockquote>
+      <p>On a regular bicycle, the 153m climb to Moraine Lake is manageable but tiring — especially at 1,800+ metres elevation where the air is thinner. You arrive sweaty and need time to recover before hiking.</p>
 
-      <h2 id="best-stops">Best Stops Along the Trail</h2>
+      <p>On an e-bike, you arrive fresh. The motor handles as much or as little of the effort as you want. Most of our guests ride with moderate assist and describe the climb as "a pleasant pedal through the forest." They arrive at Moraine Lake with energy to hike the Rockpile Trail, take photos, and enjoy a lakeside picnic — rather than collapsing on a bench.</p>
 
-      <p>One of the joys of e-biking the Legacy Trail is that you have energy to spare for exploring. Here are the stops worth building into your ride.</p>
+      <p>The return ride is pure joy regardless of bike type — 12 km of smooth, winding downhill through mountain scenery. But on an e-bike, the whole experience is balanced: enjoyable up, thrilling down.</p>
 
-      <h3>1. Canmore Engine Bridge (km 0)</h3>
-      <p>Before you even start the Legacy Trail proper, the historic Canmore Engine Bridge is worth a visit. This restored railway bridge spans the Bow River and offers postcard-perfect views of the Three Sisters. It is also an excellent photo spot to mark the beginning of your journey.</p>
+      <h2 id="rockpile-trail">The Rockpile Trail: The Twenty Dollar View</h2>
 
-      <h3>2. Grassi Lakes Viewpoint (km 3)</h3>
-      <p>Shortly after leaving Canmore, you will pass near the trailhead for Grassi Lakes. While the lakes themselves require a separate hike, the viewpoint area near the trail offers panoramic views of Ha Ling Peak and the Spray Valley.</p>
+      <p>Once you arrive at Moraine Lake, the must-do hike is the <strong>Rockpile Trail</strong> — a short 0.8 km return walk (about 15-20 minutes) up a set of stairs built into a natural rock pile. At the top, you get the iconic viewpoint: Moraine Lake's turquoise water backed by the Valley of the Ten Peaks.</p>
 
-      <h3>3. Bow Valley Parkway Overpass (km 12)</h3>
-      <p>The halfway point is marked by a bridge over the Bow Valley Parkway. This is a natural rest stop with benches, and the views up and down the valley are magnificent. Wildlife sightings are common here — keep your eyes open for elk grazing in the meadows below.</p>
+      <p>This view was featured on the old Canadian twenty dollar bill. Standing there in person, you understand why. It is one of those rare places where reality exceeds the photograph.</p>
 
-      <h3>4. Vermilion Lakes Viewpoint (km 22)</h3>
-      <p>As you approach Banff, the trail passes near the Vermilion Lakes, one of the most photographed locations in the park. If the water is calm, you can see perfect reflections of Mount Rundle. This is the spot where many of those iconic Banff postcards are shot.</p>
-
-      <h3>5. Banff Train Station (km 26.8)</h3>
-      <p>The trail ends near the Banff train station and the Central Park area. From here, you are a five-minute ride from Banff Avenue and all the amenities the town offers.</p>
-
-      <h2 id="what-to-expect">What to Expect on an E-Bike</h2>
-
-      <p>If you have never ridden an e-bike before, the Legacy Trail is the perfect introduction. Here is what to expect.</p>
-
-      <h3>The Pedal Assist Experience</h3>
-      <p>E-bikes are not motorcycles — you still pedal, but an electric motor amplifies your effort. Most e-bikes have 3-5 assist levels. On the Legacy Trail, you will likely use level 2 or 3 for most of the ride, shifting to level 4 or 5 only on the steeper sections near the Banff end.</p>
-
-      <p>The result feels almost magical. You pedal at a comfortable, conversational pace, and the bike responds by smoothly accelerating you to 20-25 km/h without any strain. Hills that would have you gasping on a regular bike feel like gentle rolling terrain. You arrive at your destination feeling energized rather than exhausted.</p>
-
-      <h3>Battery Life</h3>
-      <p>A quality e-bike with a 500Wh battery will easily handle the full return trip (53.6 km) on a single charge, even with liberal use of higher assist levels. Our tour bikes typically arrive back in Canmore with 40-60% battery remaining. Battery anxiety is not something you need to worry about on this route.</p>
-
-      <h3>Speed and Safety</h3>
-      <p>The Legacy Trail has a 20 km/h speed limit in certain sections, particularly near trailheads and busy areas. E-bikes make it easy to maintain a consistent, comfortable speed. Be courteous to pedestrians and slower cyclists — call out or ring your bell before passing, and always pass on the left.</p>
-
-      <h2 id="wildlife">Wildlife You Might See</h2>
-
-      <p>The Bow Valley corridor is one of the most biodiverse areas in the Canadian Rockies. Riding the Legacy Trail, you have a genuine chance of spotting:</p>
+      <h2 id="tips">Tips for Riding Moraine Lake Road</h2>
 
       <ul>
-        <li><strong>Elk:</strong> The most commonly sighted large animal. Herds often graze in the meadows alongside the trail, especially near Vermilion Lakes and the Bow Valley Parkway overpass.</li>
-        <li><strong>Deer:</strong> Both mule deer and white-tailed deer are frequently seen in the forested sections.</li>
-        <li><strong>Bighorn sheep:</strong> Occasionally spotted on rocky slopes near the Banff end of the trail.</li>
-        <li><strong>Bears:</strong> Both black bears and grizzly bears live in the valley. Sightings from the trail are uncommon but possible, especially in spring and fall. Always carry bear spray and know how to use it.</li>
-        <li><strong>Eagles and ospreys:</strong> Watch for raptors soaring above the Bow River, particularly in the early morning.</li>
-        <li><strong>Ground squirrels:</strong> These cheeky little residents are everywhere and will often pose for photos.</li>
+        <li><strong>Go early.</strong> The road is quietest before 8 AM, before shuttle bus traffic picks up. Our morning tours depart at 8:00 AM from the ski resort for this reason.</li>
+        <li><strong>Watch for bears.</strong> Black bears and grizzlies are active along Moraine Lake Road, particularly in berry season (late July through September). Carry bear spray and make noise on blind corners.</li>
+        <li><strong>Bring layers.</strong> At 1,884 m elevation, Moraine Lake is noticeably cooler than the valley. A light jacket and gloves are worth packing even in July.</li>
+        <li><strong>Pack food.</strong> There are no restaurants or stores at Moraine Lake. Our tours include a packed gourmet lunch — eating lakeside at Moraine is an experience in itself.</li>
+        <li><strong>Lock your bike.</strong> Bike racks are available at the Moraine Lake parking area. Bring a lock (we provide one with every rental).</li>
+        <li><strong>Check the road opening date.</strong> Moraine Lake Road typically opens June 1, but snow can delay this. Parks Canada posts current road status online.</li>
       </ul>
 
-      <blockquote>
-        <p><strong>Wildlife safety:</strong> Always maintain at least 30 metres distance from large animals. Never approach, feed, or attempt to photograph wildlife at close range. If you encounter a bear, stop, make yourself large, speak calmly, and slowly back away. On a guided tour, your guide will handle wildlife encounters.</p>
-      </blockquote>
+      <h2 id="booking">Ready to Ride?</h2>
 
-      <h2 id="when-to-ride">Best Time to Ride the Legacy Trail</h2>
+      <p>Our <a href="/tours/moraine-lake-rockpile-adventure">Moraine Lake and Rockpile Adventure</a> tour covers this exact route — with a packed lunch, bear spray, and all the local knowledge you need to make the most of the ride. Or choose the <a href="/tours/lake-louise-grand-loop">Lake Louise Grand Loop</a> to add a lakeside walk at Lake Louise and brunch at the ski resort.</p>
 
-      <p>The trail is typically open from mid-May through mid-October, but conditions vary significantly throughout the season.</p>
-
-      <h3>Early Season (Mid-May to Mid-June)</h3>
-      <p>The trail is quieter, the mountains are still capped with snow (stunning for photos), and wildflowers begin to bloom in the meadows. Mornings can be chilly — bring layers. Wildlife is particularly active as animals emerge from winter.</p>
-
-      <h3>Peak Season (Late June to August)</h3>
-      <p>The busiest time on the trail, with warm temperatures and long daylight hours. Book tours well in advance. Early morning rides (before 9 AM) offer the best combination of good light, fewer crowds, and cooler temperatures.</p>
-
-      <h3>Shoulder Season (September to Mid-October)</h3>
-      <p>Our favourite time to ride. The larch trees turn brilliant gold in mid-September, the crowds thin dramatically, and the air is crisp and clear. The mountain views are often at their sharpest during fall. Be prepared for cooler temperatures and the possibility of early snow at higher elevations.</p>
-
-      <h2 id="what-to-bring">What to Bring</h2>
-
-      <ul>
-        <li><strong>Layers:</strong> Mountain weather changes quickly. A lightweight windbreaker or rain jacket is essential even on sunny days.</li>
-        <li><strong>Sunscreen and sunglasses:</strong> UV exposure is stronger at altitude.</li>
-        <li><strong>Water:</strong> Bring at least 1 litre. There are no water fountains along the trail.</li>
-        <li><strong>Snacks:</strong> Energy bars, trail mix, or fruit for the midway point.</li>
-        <li><strong>Camera:</strong> You will want it. A phone works fine, but a proper camera captures the mountain grandeur better.</li>
-        <li><strong>Bear spray:</strong> Recommended for any activity in the Bow Valley. Available at outdoor shops in Canmore and Banff.</li>
-        <li><strong>Small backpack or bike bag:</strong> To carry your gear without holding it.</li>
-      </ul>
-
-      <h2 id="guided-vs-self-guided">Guided vs. Self-Guided: Which is Right for You?</h2>
-
-      <p>You can absolutely ride the Legacy Trail on your own with a rented e-bike. But there are compelling reasons to consider a guided tour.</p>
-
-      <h3>Benefits of a Guided E-Bike Tour</h3>
-      <ul>
-        <li><strong>Local knowledge:</strong> Your guide knows the best photo spots, the history of the valley, where wildlife is most likely to appear, and which cafe in Banff makes the best cappuccino.</li>
-        <li><strong>No logistics:</strong> Return shuttle, bike fitting, route planning — it is all handled for you.</li>
-        <li><strong>Safety:</strong> Your guide carries a first aid kit, bear spray, and a satellite communicator. They know the trail conditions and weather patterns.</li>
-        <li><strong>Small groups:</strong> With a maximum of 6-8 riders, it feels personal rather than commercial.</li>
-        <li><strong>E-bike instruction:</strong> If you have never ridden an e-bike, your guide will teach you everything you need to know in the first five minutes.</li>
-      </ul>
-
-      <h3>When Self-Guided Makes Sense</h3>
-      <p>If you are an experienced cyclist comfortable with navigation and trail logistics, a self-guided ride gives you complete freedom to set your own pace and itinerary. Rent an e-bike from a local shop, download a trail map, and go.</p>
-
-      <h2 id="getting-there">Getting to the Legacy Trail</h2>
-
-      <h3>From Canmore</h3>
-      <p>The trail begins at the Canmore Nordic Centre parking area or at the Travel Alberta Visitor Information Centre on the Trans-Canada Highway. Both starting points connect to the Legacy Trail within the first kilometre.</p>
-
-      <h3>From Banff</h3>
-      <p>The Banff end of the trail is accessible from the Banff train station area. Follow signs for the Legacy Trail from Banff Avenue.</p>
-
-      <h3>From Calgary</h3>
-      <p>Canmore is approximately 1 hour and 15 minutes west of Calgary on the Trans-Canada Highway (Highway 1). Banff is about 1 hour and 30 minutes. There is no public transit service that accommodates bikes, so you will need to drive or arrange a shuttle.</p>
-
-      <h2 id="book-your-ride">Ready to Ride the Legacy Trail?</h2>
-
-      <p>The Legacy Trail is one of those rare experiences that genuinely lives up to the hype. The combination of world-class mountain scenery, a perfectly maintained trail, and the effortless joy of e-biking creates something special — a ride you will remember long after you have returned home.</p>
-
-      <p>Whether you choose a guided tour or a self-guided adventure, you are in for one of the best days you will spend in the Canadian Rockies. The mountains are waiting.</p>
+      <p>Either way, you will see Moraine Lake the way it deserves to be seen — on your own schedule, at your own pace, arriving where cars cannot.</p>
     `,
   },
   {
     slug: "are-ebikes-allowed-in-banff-national-park",
     title:
-      "Are E-Bikes Allowed in Banff National Park? Complete Rules & Trail Guide",
+      "Are E-Bikes Allowed in Banff National Park? Complete Rules and Trail Guide",
     excerpt:
-      "Yes, e-bikes are allowed in Banff National Park — but only on specific trails and with strict rules. Here is the complete breakdown of where you can ride, what class of e-bike is permitted, and how to stay legal.",
+      "Yes — but only certain types. Here are the Parks Canada regulations for e-bikes in Banff, which trails you can ride, and what happens if you break the rules.",
     heroImage: "/images/blog/banff-ebike-rules.jpg",
     author: "Dave Richardson",
-    publishedAt: "2026-03-10",
-    category: "Rules & Regulations",
+    publishedAt: "2026-03-25",
+    category: "Planning",
     tags: [
       "Banff National Park",
-      "e-bike rules",
       "Parks Canada",
-      "regulations",
-      "where to ride",
+      "e-bike regulations",
+      "Lake Louise",
+      "Moraine Lake",
+      "rules",
     ],
-    readTime: "10 min read",
+    readTime: "8 min read",
     content: `
-      <p>It is one of the most frequently asked questions we hear: "Can I ride an e-bike in Banff National Park?" The short answer is yes, but with important restrictions. Parks Canada has developed specific regulations for e-bikes (which they classify as "power-assisted bicycles") that differ significantly from traditional bicycle rules.</p>
+      <p>One of the most common questions we get is: <strong>"Are e-bikes even allowed in Banff National Park?"</strong> The short answer is yes — but there are specific rules you need to follow.</p>
 
-      <p>This guide breaks down everything you need to know about riding an e-bike in Banff National Park, updated for the 2026 season.</p>
+      <h2 id="the-rules">Parks Canada E-Bike Regulations</h2>
 
-      <h2 id="the-basic-rules">The Basic Rules: What Parks Canada Allows</h2>
-
-      <p>Parks Canada permits e-bikes — specifically, pedal-assist electric bicycles — on the same trails and roads where traditional bicycles are allowed. However, there are critical distinctions.</p>
-
-      <h3>What Qualifies as a Legal E-Bike in the Park</h3>
-      <p>To ride legally in Banff National Park, your e-bike must meet the following requirements under Canadian federal law:</p>
+      <p>Parks Canada permits <strong>pedal-assist e-bikes only</strong> (also known as Class 1 e-bikes). The key technical requirements are:</p>
 
       <ul>
-        <li><strong>Pedal-assist only:</strong> The motor must only engage when you are actively pedalling. Throttle-only e-bikes (where the motor propels the bike without pedalling) are <strong>not permitted</strong> on trails within the national park.</li>
-        <li><strong>Maximum motor power:</strong> 500 watts or less.</li>
-        <li><strong>Maximum assisted speed:</strong> The motor must cut off at 32 km/h. Once you exceed this speed (under your own power or going downhill), the motor disengages.</li>
-        <li><strong>Must have functional pedals:</strong> The bike must be capable of being propelled by human power alone.</li>
+        <li><strong>Motor power:</strong> 500 watts or less</li>
+        <li><strong>Speed cutoff:</strong> Motor must stop assisting at 32 km/h on level ground</li>
+        <li><strong>Pedal requirement:</strong> Motor cannot engage until the bike reaches 3 km/h — you must pedal first</li>
+        <li><strong>Auto-stop:</strong> Motor assistance must immediately stop when you stop pedalling</li>
+        <li><strong>Throttle-only e-bikes are BANNED</strong> — the motor can only assist pedalling, not replace it</li>
       </ul>
 
-      <p>In practical terms, this means standard Class 1 e-bikes (pedal-assist, no throttle, 32 km/h cutoff) are welcome. Class 2 e-bikes (which have a throttle) are not permitted on trails. Class 3 e-bikes (with higher speed cutoffs) may not comply depending on the model.</p>
+      <p>All of our rental e-bikes meet these requirements. If you are bringing your own e-bike, verify it complies before riding in the park.</p>
 
-      <blockquote>
-        <p><strong>Important:</strong> If your e-bike has a throttle, you may still be able to use it on public roads within the park (such as Banff Avenue), but you cannot ride it on multi-use pathways or trails. When in doubt, use pedal-assist only.</p>
-      </blockquote>
+      <h3>Penalties</h3>
+      <p>Riding a non-compliant e-bike in Banff National Park can result in fines of <strong>up to $25,000</strong> under the Canada National Parks Act. Parks Canada wardens actively enforce this.</p>
 
-      <h2 id="where-you-can-ride">Where You Can Ride an E-Bike in Banff National Park</h2>
+      <h2 id="allowed-trails">Where Can You Ride E-Bikes in the Lake Louise Area?</h2>
 
-      <p>E-bikes are allowed on all paved and designated multi-use trails where traditional bicycles are permitted. Here is the complete list of e-bike-legal routes.</p>
+      <p>E-bikes are permitted on the following trails and roads in the Lake Louise area of Banff National Park:</p>
 
-      <h3>Paved Multi-Use Trails</h3>
+      <h3>Roads Open to E-Bikes</h3>
       <ul>
-        <li><strong>Legacy Trail</strong> (Canmore to Banff, 26.8 km) — The most popular e-bike route in the park. Fully paved, gentle grades, spectacular views. This is the trail most people think of when they picture e-biking in Banff.</li>
-        <li><strong>Bow River Pathway</strong> (within Banff townsite, ~5 km) — A lovely loop along the Bow River through the town of Banff. Connects to several parks, bridges, and viewpoints.</li>
-        <li><strong>Sundance Trail</strong> (3.6 km one way from Cave and Basin) — A peaceful paved trail along the Bow River south of town.</li>
-        <li><strong>Vermilion Lakes Road</strong> (4.3 km) — A quiet road with minimal vehicle traffic and stunning views of Mount Rundle reflected in the Vermilion Lakes.</li>
+        <li><strong>Lake Louise Drive</strong> — The road connecting the Trans-Canada Highway to Lake Louise (the lake). ~4 km, paved.</li>
+        <li><strong>Moraine Lake Road</strong> — 12 km paved road to Moraine Lake. Closed to private vehicles but open to bikes. This is our featured route.</li>
+        <li><strong>Bow Valley Parkway (Highway 1A)</strong> — Sections close to motor vehicles seasonally, creating a car-free cycling corridor.</li>
       </ul>
 
-      <h3>Gravel and Dirt Multi-Use Trails (E-Bikes Permitted)</h3>
+      <h3>Trails Open to E-Bikes (Banff Area)</h3>
       <ul>
-        <li><strong>Spray River Loop</strong> (12 km loop from Banff Springs Hotel) — A crushed gravel trail along the Spray River. Wide, well-maintained, and scenic. E-bikes handle this surface well.</li>
-        <li><strong>Goat Creek Trail</strong> (Canmore to Banff via Spray Valley, 19 km) — A more challenging option for experienced riders. Mixed surface with some elevation. Fat-tire e-bikes are recommended.</li>
-        <li><strong>Lake Minnewanka Lakeside Trail</strong> (first 6 km section) — A packed gravel trail along the shore of Lake Minnewanka. Watch for bears in the early morning.</li>
+        <li>Lake Louise Drive (4 km, paved)</li>
+        <li>Sundance Trail</li>
+        <li>Brewster Creek Trail</li>
+        <li>Cascade Ponds to Bankhead Trail</li>
+        <li>Fenland Loop</li>
+        <li>Tunnel Mountain Bench network</li>
+        <li>Healy Creek Trail (partial)</li>
+        <li>Redearth Creek Trail (partial)</li>
       </ul>
 
-      <h3>Roads Where E-Bikes are Allowed</h3>
+      <h3>Trails Open to E-Bikes (Lake Louise Area)</h3>
       <ul>
-        <li><strong>Bow Valley Parkway</strong> (Highway 1A, Banff to Lake Louise) — A scenic alternative to the Trans-Canada, with lower speed limits and better cycling conditions. The road is sometimes closed to motor vehicles in spring for cycling events.</li>
-        <li><strong>Tunnel Mountain Drive</strong> — A loop road near Banff with moderate hills.</li>
-        <li><strong>All public roads within the Banff townsite</strong></li>
+        <li>Bow River Trail</li>
+        <li>Tramline Trail</li>
+        <li>Louise Creek Trail (partial)</li>
+        <li>Great Divide Trail</li>
       </ul>
-
-      <h2 id="where-you-cannot-ride">Where E-Bikes Are NOT Allowed</h2>
-
-      <p>This is equally important. E-bikes are <strong>prohibited</strong> on:</p>
-
-      <ul>
-        <li><strong>Hiking-only trails:</strong> Trails designated for foot traffic only are off-limits to all bikes, including e-bikes. This includes popular routes like Johnston Canyon, Sunshine Meadows hiking trails, and the Plain of Six Glaciers.</li>
-        <li><strong>Single-track mountain bike trails:</strong> Some mountain bike trails in the park may have specific restrictions. Check with the Banff Visitor Centre for current trail status.</li>
-        <li><strong>Backcountry trails:</strong> E-bikes are not permitted on backcountry trails or in wilderness areas.</li>
-        <li><strong>Sidewalks in the Banff townsite:</strong> Ride on the road or designated bike paths, not on pedestrian sidewalks.</li>
-      </ul>
-
-      <blockquote>
-        <p><strong>The golden rule:</strong> If you see a "No Bicycles" sign, that applies to e-bikes too. E-bikes have the same access as traditional bikes — no more, no less.</p>
-      </blockquote>
 
       <h2 id="park-pass">Do You Need a Park Pass?</h2>
 
-      <p>Yes. Everyone entering Banff National Park needs a valid Parks Canada pass, regardless of how you arrive — by car, bus, bike, or on foot.</p>
+      <p>Yes. A valid <strong>Parks Canada pass</strong> is required to enter Banff National Park — whether you are driving, cycling, or walking in. You can purchase a day pass at the park gates or online. If you have an annual Discovery Pass, that covers all national parks across Canada.</p>
 
-      <h3>Pass Options</h3>
-      <ul>
-        <li><strong>Daily pass:</strong> $10.50 per adult (2026 rates). Valid for the day of purchase.</li>
-        <li><strong>Discovery Pass:</strong> $72.25 per adult (annual). Valid at all national parks and historic sites across Canada for 12 months. Worth it if you plan to visit multiple times or explore other parks.</li>
-        <li><strong>Family/group daily pass:</strong> $21.00 for up to 7 people arriving in a single vehicle.</li>
-      </ul>
+      <p>Our tours include a reminder about the park pass in your booking confirmation email. We recommend purchasing online in advance to skip the line at the park gates.</p>
 
-      <p>You can purchase passes at park gates, the Banff Visitor Centre, or online at the Parks Canada website. If you are on the Legacy Trail, the Canmore end is outside the park boundary, so you do not need a pass until you cross into the park (roughly at the Dead Man's Flats area heading toward Banff).</p>
+      <h2 id="helmets">Helmet Rules</h2>
 
-      <h3>Where to Display Your Pass on an E-Bike</h3>
-      <p>Unlike a car, you cannot hang your pass from a rearview mirror. Parks Canada recommends carrying your pass in a visible location — a clear pocket on your handlebar bag or a lanyard works well. Wardens may ask to see it on the trail, though this is uncommon.</p>
+      <p>Under Alberta law, <strong>helmets are mandatory for all ages when riding an e-bike</strong>. This is different from regular bicycles, where helmets are only required for riders under 18. On an e-bike, everyone wears a helmet — no exceptions. We provide properly fitted helmets with every tour and rental.</p>
 
-      <h2 id="speed-limits">Speed Limits and Trail Etiquette</h2>
+      <h2 id="our-tours">Our Tours Stay Compliant</h2>
 
-      <p>E-bikes make it easy to ride faster than you might on a traditional bike, which creates responsibility. Parks Canada and local trail organizations have established clear guidelines.</p>
-
-      <h3>Speed Limits</h3>
-      <ul>
-        <li><strong>20 km/h</strong> on all multi-use trails (including the Legacy Trail)</li>
-        <li><strong>Slower when passing</strong> pedestrians, children, dogs, or other cyclists</li>
-        <li><strong>Walking speed</strong> in congested areas, near trailheads, and at viewpoints</li>
-      </ul>
-
-      <h3>Trail Etiquette</h3>
-      <ul>
-        <li><strong>Ring your bell</strong> or call out "On your left" before passing</li>
-        <li><strong>Yield to pedestrians</strong> — they always have right of way</li>
-        <li><strong>Stay on designated trails</strong> — cutting new paths damages sensitive alpine and riparian ecosystems</li>
-        <li><strong>Pack out everything</strong> — leave no trace</li>
-        <li><strong>Keep right except to pass</strong></li>
-        <li><strong>Do not ride with earbuds in both ears</strong> — you need to hear wildlife, other trail users, and emergency vehicles</li>
-      </ul>
-
-      <h2 id="fines">Fines and Enforcement</h2>
-
-      <p>Parks Canada takes trail regulations seriously. Fines for violations include:</p>
-
-      <ul>
-        <li><strong>Riding on a prohibited trail:</strong> Up to $25,000 under the Canada National Parks Act (though typical fines are much lower, in the $100-$500 range)</li>
-        <li><strong>Riding without a park pass:</strong> $100+</li>
-        <li><strong>Disturbing wildlife:</strong> Up to $25,000</li>
-        <li><strong>Riding a non-compliant e-bike on trails:</strong> Subject to equipment seizure and fines</li>
-      </ul>
-
-      <p>Enforcement is conducted by park wardens and RCMP. While most interactions are educational rather than punitive, repeat or flagrant violations are dealt with firmly.</p>
-
-      <h2 id="tips-for-riding-legal">Tips for a Legal, Enjoyable E-Bike Experience</h2>
-
-      <ul>
-        <li><strong>Confirm your e-bike class before you ride.</strong> If renting, ask the shop whether the bike is Class 1 (pedal-assist only, 32 km/h cutoff). All bikes from Alpine E-Bike Tours meet Parks Canada requirements.</li>
-        <li><strong>Buy your park pass before you reach the trail.</strong> Lines at park gates can be long during summer.</li>
-        <li><strong>Download a trail map.</strong> Cell service is spotty in parts of the park. Have an offline map ready.</li>
-        <li><strong>Check for seasonal closures.</strong> Some trails close temporarily for wildlife management (particularly bear activity in spring and fall). Check the Parks Canada website or call the Banff Visitor Centre before heading out.</li>
-        <li><strong>Join a guided tour.</strong> Your guide handles all the logistics — park passes, e-bike compliance, route selection, and wildlife safety. You just show up and ride.</li>
-      </ul>
-
-      <h2 id="bottom-line">The Bottom Line</h2>
-
-      <p>E-biking in Banff National Park is not only legal — it is one of the best ways to experience the park. The combination of world-class trails, stunning scenery, and the ease of pedal-assist makes it accessible to virtually everyone. Follow the rules, respect the environment, and you will have an unforgettable ride through one of the most beautiful places on Earth.</p>
+      <p>All <a href="/tours">Alpine E-Bike Tours</a> operate with full Parks Canada compliance. Our e-bikes are pedal-assist only, under 500W, with a 32 km/h cutoff. We carry all required permits and insurance. Your only job is to enjoy the ride.</p>
     `,
   },
   {
-    slug: "7-best-ebike-routes-banff-canmore",
-    title: "7 Best E-Bike Routes in Banff and Canmore (Ranked by Difficulty)",
+    slug: "why-ebike-to-moraine-lake-instead-of-shuttle",
+    title: "Why You Should E-Bike to Moraine Lake Instead of Taking the Shuttle",
     excerpt:
-      "From gentle riverside paths to challenging mountain routes, here are the 7 best e-bike rides in the Banff and Canmore area — ranked from easiest to hardest with distance, elevation, and insider tips.",
-    heroImage: "/images/blog/best-routes-banff.jpg",
+      "The shuttle gets you there. An e-bike gives you the experience. Here is why riding to Moraine Lake is worth every pedal stroke.",
+    heroImage: "/images/blog/moraine-vs-shuttle.jpg",
     author: "Dave Richardson",
-    publishedAt: "2026-03-05",
+    publishedAt: "2026-03-20",
     category: "Trail Guides",
     tags: [
-      "best routes",
-      "Banff",
-      "Canmore",
-      "e-bike routes",
-      "ranked",
-      "listicle",
+      "Moraine Lake",
+      "shuttle",
+      "e-bike advantage",
+      "Lake Louise",
+      "Parks Canada",
     ],
-    readTime: "14 min read",
+    readTime: "7 min read",
     content: `
-      <p>The Banff and Canmore area offers some of the finest e-biking in North America. With hundreds of kilometres of trails winding through the Canadian Rockies, the hardest part is choosing where to ride. We have spent years guiding riders through these mountains, and these are the seven routes we recommend most — ranked from easiest to most challenging.</p>
+      <p>Since Moraine Lake Road closed to private vehicles in 2023, visitors have two options: take the Parks Canada shuttle bus, or ride a bike. Most people take the shuttle without considering the alternative. Here is why the e-bike option is better in almost every way.</p>
 
-      <h2 id="bow-river-pathway">1. Bow River Pathway (Easiest)</h2>
+      <h2 id="schedule-freedom">1. You Set Your Own Schedule</h2>
 
-      <ul>
-        <li><strong>Distance:</strong> 5 km loop</li>
-        <li><strong>Elevation gain:</strong> Minimal (~20 m)</li>
-        <li><strong>Surface:</strong> Paved</li>
-        <li><strong>Time on e-bike:</strong> 30-45 minutes</li>
-        <li><strong>Best for:</strong> First-time e-bike riders, families, short outings</li>
-      </ul>
+      <p>The shuttle runs on a fixed timetable. You arrive when the bus arrives, and you leave when the next bus departs. If you want an extra twenty minutes at the Rockpile viewpoint, too bad — the bus waits for no one.</p>
 
-      <p>The Bow River Pathway is the perfect introduction to e-biking in the Rockies. This gentle loop follows the Bow River through the town of Banff, passing Bow Falls, the Banff Springs Hotel, and Central Park. The path is wide, flat, and well-maintained, making it ideal for riders who have never been on an e-bike before.</p>
+      <p>On an e-bike, you decide. Linger at the viewpoint for an hour. Have a long picnic lunch. Take the scenic way back. Your schedule is your own.</p>
 
-      <p>What makes this route special is the accessibility combined with the scenery. You are riding through a UNESCO World Heritage Site on a route that a five-year-old could handle, yet the mountain views are just as spectacular as anything you will see on a backcountry trail. Stop at Bow Falls for photos — the turquoise water against the mountain backdrop is extraordinary.</p>
+      <h2 id="the-ride">2. The Ride IS the Experience</h2>
 
-      <blockquote>
-        <p><strong>Local tip:</strong> Ride this route in the early morning (before 8 AM) for the best light on the mountains and a near-empty trail. Bonus: you might spot elk grazing along the riverbank.</p>
-      </blockquote>
+      <p>The shuttle whisks you to Moraine Lake in about 25 minutes. You miss everything between the junction and the lake — 12 km of stunning subalpine forest, mountain streams, and wildlife habitat. On an e-bike, that ride is part of the adventure. You hear the creek, smell the spruce, spot wildlife in the meadows, and feel the mountain air. The journey becomes half the destination.</p>
 
-      <h2 id="vermilion-lakes">2. Vermilion Lakes Road</h2>
+      <h2 id="quiet">3. You Arrive in Quiet</h2>
 
-      <ul>
-        <li><strong>Distance:</strong> 8.6 km out-and-back</li>
-        <li><strong>Elevation gain:</strong> ~30 m</li>
-        <li><strong>Surface:</strong> Paved road (minimal traffic)</li>
-        <li><strong>Time on e-bike:</strong> 45-60 minutes</li>
-        <li><strong>Best for:</strong> Photography, wildlife, sunset rides</li>
-      </ul>
+      <p>Shuttle buses are loud. They pull up to a busy parking area, doors open, and dozens of people pour out at once. The first few minutes at Moraine Lake are chaos.</p>
 
-      <p>Vermilion Lakes Road is a quiet, lightly-trafficked road west of Banff that runs alongside three interconnected lakes at the base of Mount Rundle. This is the ride for photographers. The reflection of Mount Rundle in the still waters of the Vermilion Lakes is one of the most iconic images in the Canadian Rockies, and you will have a front-row seat from your e-bike.</p>
+      <p>On a bike, you glide in silently. You lock up, take a breath, and walk to the lakeshore with the sound of your own footsteps. The experience of arriving quietly at one of the most beautiful places on Earth is genuinely different from arriving on a bus.</p>
 
-      <p>The road is flat and easy to ride, with several pullouts where you can stop and soak in the views. Osprey nest in the dead trees along the lakeshores, elk graze in the marshy meadows, and on calm evenings, the entire mountain range is mirrored in the water.</p>
+      <h2 id="wildlife">4. Better Wildlife Spotting</h2>
 
-      <p>This route connects easily to the Bow River Pathway and the Legacy Trail, so you can combine it with other rides for a longer outing.</p>
+      <p>E-bikes are quiet enough that animals do not spook the way they do with motor vehicles. Black bears, pikas, marmots, and eagles are all more likely to stay visible when you approach slowly and silently on two wheels. Several of our guests have had closer wildlife encounters on the ride to Moraine Lake than they have had in years of visiting the Rockies by car.</p>
 
-      <h2 id="sundance-trail">3. Sundance Trail</h2>
+      <h2 id="no-stress">5. Zero Logistics Stress</h2>
 
-      <ul>
-        <li><strong>Distance:</strong> 7.2 km out-and-back</li>
-        <li><strong>Elevation gain:</strong> ~50 m</li>
-        <li><strong>Surface:</strong> Paved</li>
-        <li><strong>Time on e-bike:</strong> 45-60 minutes</li>
-        <li><strong>Best for:</strong> Peaceful riding, nature immersion</li>
-      </ul>
+      <p>Shuttle reservations fill up. The early-morning "Alpine Start" slots at 4:00 AM and 5:00 AM sell out. Day-of availability is not guaranteed. The whole system adds a layer of planning and anxiety to what should be a relaxing day in the mountains.</p>
 
-      <p>Starting from the Cave and Basin National Historic Site (the birthplace of Canada's national park system), the Sundance Trail follows the Bow River southward through dense forest. This is one of the quieter trails in the area — fewer tourists venture this direction, which means you will often have long stretches to yourself.</p>
+      <p>On an e-bike, you just ride. No reservations, no sold-out slots, no checking your phone for bus schedules. Leave when you are ready, come back when you are done.</p>
 
-      <p>The trail is paved and gentle throughout, with just enough elevation change to feel like you are going somewhere. The forest canopy creates a cool, shaded corridor even on hot summer days, and the Bow River appears and disappears through gaps in the trees. Watch for harlequin ducks in the river during spring — they are colourful, entertaining, and surprisingly rare.</p>
+      <h2 id="the-downhill">6. The Downhill Return</h2>
 
-      <h2 id="legacy-trail">4. Legacy Trail</h2>
+      <p>The shuttle ride back to the parking lot is... a bus ride. On an e-bike, the return from Moraine Lake is a 12 km downhill coast through mountain scenery. Smooth pavement, sweeping curves, cool mountain air, and the kind of grin that only gravity and good scenery can produce. It is the best part of the day, and the shuttle passengers never get to experience it.</p>
 
-      <ul>
-        <li><strong>Distance:</strong> 26.8 km one way (53.6 km return)</li>
-        <li><strong>Elevation gain:</strong> ~140 m (Canmore to Banff direction)</li>
-        <li><strong>Surface:</strong> Paved</li>
-        <li><strong>Time on e-bike:</strong> 1.5-2.5 hours one way</li>
-        <li><strong>Best for:</strong> Full-day adventure, destination riding</li>
-      </ul>
+      <h2 id="book">Ready to Skip the Shuttle?</h2>
 
-      <p>The Legacy Trail is the signature ride of the Canadian Rockies. Running from Canmore to the town of Banff through the Bow Valley, it is 26.8 kilometres of pure mountain scenery on a purpose-built paved pathway. The Three Sisters, Ha Ling Peak, Cascade Mountain, Mount Rundle — every major peak in the central Rockies makes an appearance.</p>
-
-      <p>On an e-bike, this trail is firmly in the "moderate" category. The grades are gentle, the surface is perfect, and the motor handles any uphill sections with ease. The primary challenge is distance — 53.6 km return — and the time commitment. Plan for a full day, including stops for photos, wildlife watching, and lunch in Banff.</p>
-
-      <p>We rank this as number 4 (moderate) rather than easy because of the sheer length and the need for basic endurance, even with pedal assist. The ride is not difficult at any single point, but five hours in the saddle requires some fitness base.</p>
-
-      <h2 id="spray-river-loop">5. Spray River Loop</h2>
-
-      <ul>
-        <li><strong>Distance:</strong> 12 km loop</li>
-        <li><strong>Elevation gain:</strong> ~120 m</li>
-        <li><strong>Surface:</strong> Crushed gravel and packed dirt</li>
-        <li><strong>Time on e-bike:</strong> 1-1.5 hours</li>
-        <li><strong>Best for:</strong> Off-pavement riding, forest immersion</li>
-      </ul>
-
-      <p>The Spray River Loop takes you off the pavement and into the kind of deep forest riding that makes the Rockies special. Starting from the Banff Springs Hotel, the trail follows the Spray River on a wide crushed-gravel path through dense spruce forest, with the towering face of Mount Rundle looming above.</p>
-
-      <p>This is a step up in difficulty because of the unpaved surface and more noticeable elevation changes. An e-bike with wider tires handles the gravel beautifully, and the motor makes the uphill sections feel manageable. The payoff is a more intimate, wilder experience than the paved trails offer — you feel like you are actually in the backcountry, even though you are only a few kilometres from downtown Banff.</p>
-
-      <p>Wildlife encounters are more likely on this trail than on busier paved routes. Keep your eyes (and ears) open for elk, deer, and bears.</p>
-
-      <h2 id="goat-creek">6. Goat Creek Trail</h2>
-
-      <ul>
-        <li><strong>Distance:</strong> 19 km one way</li>
-        <li><strong>Elevation gain:</strong> ~250 m (significant descent from Canmore end)</li>
-        <li><strong>Surface:</strong> Mixed — packed gravel, dirt, some rocky sections</li>
-        <li><strong>Time on e-bike:</strong> 2-3 hours one way</li>
-        <li><strong>Best for:</strong> Experienced riders seeking adventure</li>
-      </ul>
-
-      <p>Goat Creek is the wild alternative to the Legacy Trail. While the Legacy Trail follows the Trans-Canada Highway corridor on smooth pavement, Goat Creek plunges through the Spray Valley on the other side of the mountains, connecting Canmore to the Banff Springs Hotel via a rugged forest trail.</p>
-
-      <p>The surface is mixed and variable — packed gravel in some sections, loose dirt in others, with occasional rocky stretches that require attention. There are stream crossings (usually small enough to ride through), root-covered sections, and a few steep pitches that will test even an e-bike's assist system.</p>
-
-      <p>The reward is solitude and raw mountain scenery that most tourists never see. The Spray Valley is achingly beautiful — towering peaks, crystal-clear streams, and ancient forest. This is the ride for people who want to feel like explorers rather than tourists.</p>
-
-      <blockquote>
-        <p><strong>Note:</strong> We recommend a fat-tire or mountain-style e-bike for Goat Creek. A standard city-style e-bike will struggle with the surface. Check with your rental provider or tour operator for the right bike.</p>
-      </blockquote>
-
-      <h2 id="lake-minnewanka">7. Lake Minnewanka Loop (Most Challenging)</h2>
-
-      <ul>
-        <li><strong>Distance:</strong> 24 km loop (road + trail)</li>
-        <li><strong>Elevation gain:</strong> ~350 m</li>
-        <li><strong>Surface:</strong> Mixed — paved road + gravel lakeside trail</li>
-        <li><strong>Time on e-bike:</strong> 2.5-4 hours</li>
-        <li><strong>Best for:</strong> Strong riders, lake views, half-day adventure</li>
-      </ul>
-
-      <p>The Lake Minnewanka Loop combines road riding with lakeside trail riding for the most challenging and rewarding e-bike experience in the Banff area. The route takes you up the Lake Minnewanka Road (a steady climb with proper hills), along the packed gravel lakeside trail for the first 6 kilometres, and back via the Johnson Lake area.</p>
-
-      <p>Lake Minnewanka itself is breathtaking — a 21-kilometre-long glacial lake surrounded by peaks, with impossibly clear water that shifts between emerald and sapphire depending on the light. The lakeside trail is where you will earn your views, with some narrow sections, modest climbs, and loose gravel that demands concentration.</p>
-
-      <p>This route is challenging even on an e-bike because of the sustained climbing on the road section and the technical demands of the lakeside trail. It is not suitable for beginners, but experienced riders who want to push their limits will find it deeply satisfying.</p>
-
-      <h2 id="choosing-your-route">How to Choose Your Route</h2>
-
-      <p>Here is a quick decision framework:</p>
-
-      <ul>
-        <li><strong>Never ridden an e-bike?</strong> Start with the Bow River Pathway (#1). It is short, flat, and lets you get comfortable with the bike.</li>
-        <li><strong>Want the iconic experience?</strong> The Legacy Trail (#4) is the signature ride. Budget a full day.</li>
-        <li><strong>Photographer?</strong> Vermilion Lakes (#2) at sunset is unmissable.</li>
-        <li><strong>Want adventure?</strong> Goat Creek (#6) or Lake Minnewanka (#7) will deliver.</li>
-        <li><strong>Short on time?</strong> Sundance Trail (#3) gives you a complete experience in under an hour.</li>
-        <li><strong>Want a guide?</strong> Our tours cover the Legacy Trail, Spray River Loop, and more — check our tour page for details.</li>
-      </ul>
-
-      <p>Whatever you choose, e-biking in Banff and Canmore is a world-class experience. The trails are well-maintained, the scenery is beyond description, and on an e-bike, the mountains are yours to explore without the suffering. Happy riding.</p>
-    `,
-  },
-  {
-    slug: "ebike-tours-banff-everything-to-know-before-booking",
-    title:
-      "E-Bike Tours in Banff: Everything You Need to Know Before Booking",
-    excerpt:
-      "Thinking about booking an e-bike tour in Banff? This buyer's guide covers what to expect, what is included, how to choose between operators, and how to get the most from your experience.",
-    heroImage: "/images/blog/booking-guide.jpg",
-    author: "Dave Richardson",
-    publishedAt: "2026-02-28",
-    category: "Planning",
-    tags: [
-      "booking guide",
-      "e-bike tours",
-      "Banff",
-      "what to expect",
-      "buyer guide",
-      "planning",
-    ],
-    readTime: "11 min read",
-    content: `
-      <p>An e-bike tour through the Canadian Rockies is one of those experiences that sounds almost too good to be true. Cruise through stunning mountain scenery, no special fitness required, all gear provided, guided by someone who knows every turn and hidden viewpoint. And yet, that is exactly what it is.</p>
-
-      <p>But not all e-bike tours are created equal, and knowing what to look for before you book can mean the difference between a good experience and a great one. This guide covers everything you need to know.</p>
-
-      <h2 id="what-is-an-ebike-tour">What Exactly is an E-Bike Tour?</h2>
-
-      <p>An e-bike tour is a guided cycling experience using electric-assist bicycles. Unlike a standard bike rental where you are on your own, a tour provides:</p>
-
-      <ul>
-        <li>A professional guide who leads the group</li>
-        <li>A premium e-bike fitted to your height and riding style</li>
-        <li>All necessary safety equipment (helmet, reflective vest if needed)</li>
-        <li>A planned route with scheduled stops at the best viewpoints</li>
-        <li>Local knowledge, history, and wildlife interpretation</li>
-        <li>Logistics like return shuttles, snacks, and water</li>
-      </ul>
-
-      <p>The e-bike itself is the key differentiator. A pedal-assist motor amplifies your pedalling effort, so hills feel flat, headwinds disappear, and you can ride 40-50 kilometres without feeling like you have done a workout. This opens up the Canadian Rockies to people who would never consider a traditional cycling tour — families with kids, older travellers, people recovering from injuries, or anyone who simply prefers to enjoy scenery rather than suffer through it.</p>
-
-      <h2 id="what-to-expect">What to Expect on Tour Day</h2>
-
-      <p>Here is a typical timeline for a half-day e-bike tour in the Banff/Canmore area.</p>
-
-      <h3>Before the Ride (30-45 minutes)</h3>
-      <p>You will arrive at the meeting point (usually a shop or designated parking area) where your guide will:</p>
-      <ul>
-        <li>Fit you to your e-bike — adjusting seat height, handlebar position, and demonstrating the controls</li>
-        <li>Give a brief safety orientation covering braking, gear shifting, and pedal-assist levels</li>
-        <li>Review the day's route, weather conditions, and any wildlife advisories</li>
-        <li>Distribute helmets, water bottles, and any other gear</li>
-      </ul>
-
-      <p>If you have never ridden an e-bike, do not worry. The orientation is thorough, and most people are comfortable within the first five minutes of riding. The controls are intuitive — you pedal, the bike helps. That is really all there is to it.</p>
-
-      <h3>The Ride (2-4 hours depending on tour)</h3>
-      <p>Your guide leads the group at a pace that suits the slowest rider. This is not a race — it is a sightseeing experience. Expect frequent stops for:</p>
-      <ul>
-        <li>Photography at scenic viewpoints</li>
-        <li>Wildlife watching (elk, deer, eagles, and occasionally bears)</li>
-        <li>Historical and ecological interpretation from your guide</li>
-        <li>Snack and water breaks</li>
-        <li>Rest stops at natural gathering points along the trail</li>
-      </ul>
-
-      <h3>After the Ride</h3>
-      <p>Depending on the tour, you may be shuttled back to the starting point, or the route may be a loop that returns you to where you began. Some tours end with a stop for coffee or lunch in Banff or Canmore.</p>
-
-      <h2 id="what-is-included">What Should Be Included (and What to Watch For)</h2>
-
-      <p>A quality e-bike tour should include everything you need for the ride. Here is what to look for when comparing operators.</p>
-
-      <h3>Must-Haves (Non-Negotiable)</h3>
-      <ul>
-        <li><strong>Premium e-bike:</strong> Not all e-bikes are created equal. Look for operators using brand-name bikes (Trek, Specialized, Giant, or similar) with mid-drive motors (Bosch, Shimano). These provide a smoother, more natural ride than cheap hub-motor bikes.</li>
-        <li><strong>Helmet:</strong> Required by law in Alberta for all ages.</li>
-        <li><strong>Experienced guide:</strong> Your guide should be a certified cycling guide, wilderness first aid trained, and intimately familiar with the local trails.</li>
-        <li><strong>Insurance:</strong> The operator should carry liability insurance. Ask if it is not mentioned.</li>
-      </ul>
-
-      <h3>Nice-to-Haves (Separates Good from Great)</h3>
-      <ul>
-        <li><strong>Small group size:</strong> 8 or fewer riders per guide. Anything over 10 starts feeling impersonal.</li>
-        <li><strong>Snacks and water:</strong> A bottle of water and an energy bar cost the operator almost nothing but show they care about your experience.</li>
-        <li><strong>Return shuttle:</strong> Essential for point-to-point routes like the Legacy Trail.</li>
-        <li><strong>Bear spray:</strong> Should be carried by the guide at minimum.</li>
-        <li><strong>Photo service:</strong> Some guides carry a camera and provide professional-quality photos of your ride.</li>
-        <li><strong>Flexible cancellation:</strong> Weather in the mountains is unpredictable. Good operators offer free cancellation or rescheduling with 24-48 hours notice.</li>
-      </ul>
-
-      <h2 id="how-to-choose">How to Choose Between Tour Operators</h2>
-
-      <p>The Banff and Canmore area has several e-bike tour operators. Here is how to evaluate them.</p>
-
-      <h3>Questions to Ask</h3>
-      <ul>
-        <li><strong>What brand and model of e-bikes do you use?</strong> Premium bikes make a noticeable difference in ride quality. If the operator cannot tell you the brand, that is a red flag.</li>
-        <li><strong>What is your maximum group size?</strong> Smaller is better. 6-8 is ideal.</li>
-        <li><strong>What qualifications do your guides have?</strong> Look for wilderness first aid, cycling guide certification, and local knowledge.</li>
-        <li><strong>What is your cancellation policy?</strong> Rigid cancellation policies can leave you paying for a ride in a thunderstorm.</li>
-        <li><strong>What is included in the price?</strong> Compare total value, not just the ticket price.</li>
-        <li><strong>How long have you been operating?</strong> Experience matters in the mountains.</li>
-      </ul>
-
-      <h3>Red Flags</h3>
-      <ul>
-        <li>No mention of guide qualifications or training</li>
-        <li>Group sizes of 15+</li>
-        <li>No-refund cancellation policies</li>
-        <li>Vague descriptions of bikes used ("quality e-bikes" without brand names)</li>
-        <li>No liability insurance mentioned</li>
-        <li>No bear safety protocol described</li>
-      </ul>
-
-      <h2 id="who-is-it-for">Who Are E-Bike Tours For?</h2>
-
-      <p>This is the beauty of e-bike touring: it is genuinely for everyone. We regularly welcome:</p>
-
-      <ul>
-        <li><strong>Families with children:</strong> Kids as young as 12 can ride their own e-bike on most tours. Younger children can ride in a trailer or on a tandem attachment.</li>
-        <li><strong>Couples with different fitness levels:</strong> The e-bike equalizes. A marathon runner and a couch potato can ride side by side and both enjoy themselves.</li>
-        <li><strong>Older adults:</strong> We regularly have guests in their 60s and 70s who would never attempt a traditional cycling tour. The e-bike removes the fitness barrier entirely.</li>
-        <li><strong>People with injuries or conditions:</strong> Bad knees, hip replacements, respiratory conditions — the pedal assist means you can ride comfortably without stressing your body.</li>
-        <li><strong>Experienced cyclists:</strong> If you think e-bikes are "cheating," try one. Most serious cyclists who ride an e-bike in the mountains come away converted. It is not about making it easy — it is about extending your range and letting you focus on the scenery instead of your heart rate.</li>
-      </ul>
-
-      <h2 id="pricing">What Do E-Bike Tours Cost?</h2>
-
-      <p>In the Banff and Canmore area, expect to pay between $150 and $300 per person for a guided e-bike tour, depending on:</p>
-
-      <ul>
-        <li><strong>Duration:</strong> Half-day tours (3-4 hours) typically run $150-$200. Full-day tours (5-7 hours) run $200-$300.</li>
-        <li><strong>Group size:</strong> Private tours cost more but offer a personalized experience.</li>
-        <li><strong>Inclusions:</strong> Tours that include lunch, premium snacks, or photography services may charge more.</li>
-        <li><strong>Season:</strong> Peak season (July-August) prices may be higher than shoulder season.</li>
-      </ul>
-
-      <p>Is it worth it? Consider what you are getting: a premium e-bike (which would cost $80-$150 to rent on its own), an expert guide, all safety equipment, logistics, local knowledge, and 3-7 hours of entertainment in one of the most beautiful places on Earth. Dollar for dollar, it is one of the best activity values in the Canadian Rockies.</p>
-
-      <h2 id="booking-tips">Tips for Booking</h2>
-
-      <ul>
-        <li><strong>Book early for peak season.</strong> July and August tours fill weeks in advance, especially for small-group operators. September is increasingly popular (larch season) and also books up quickly.</li>
-        <li><strong>Morning rides are best.</strong> Weather in the mountains is most stable in the morning. Afternoon thunderstorms are common in July and August. Book the earliest available departure.</li>
-        <li><strong>Check the weather forecast.</strong> A light rain or cool temperatures should not deter you — some of the most dramatic mountain scenery happens during unsettled weather. But heavy rain, high winds, or lightning are valid reasons to reschedule.</li>
-        <li><strong>Mention any physical limitations when booking.</strong> Good operators will adjust the route, bike setup, and pace to accommodate your needs. But they need to know in advance.</li>
-        <li><strong>Ask about the bike fit process.</strong> A properly fitted bike is the difference between a comfortable ride and a painful one. Operators who take 10-15 minutes per person for bike fitting are doing it right.</li>
-      </ul>
-
-      <h2 id="ready-to-book">Ready to Book Your Ride?</h2>
-
-      <p>An e-bike tour through the Canadian Rockies is the kind of experience that stays with you. The mountains, the wildlife, the effortless riding, the stories your guide tells — it all comes together into something genuinely memorable.</p>
-
-      <p>Do your research, choose an operator you trust, and show up ready to be amazed. The Rockies will do the rest.</p>
+      <p>Our <a href="/tours/moraine-lake-rockpile-adventure">Moraine Lake and Rockpile Adventure</a> includes the e-bike, packed lunch, bear spray, and everything you need for a perfect day at Moraine Lake — minus the bus.</p>
     `,
   },
   {
     slug: "what-to-wear-pack-ebike-tour-canadian-rockies",
     title:
-      "What to Wear & Pack for an E-Bike Tour in the Canadian Rockies",
+      "What to Wear and Pack for an E-Bike Tour in the Canadian Rockies",
     excerpt:
-      "Mountain weather is unpredictable and altitude changes everything. Here is the definitive packing list for an e-bike tour in Banff and Canmore — from clothing layers to must-have gear.",
+      "The mountains change fast. Here is exactly what to wear, what to bring, and what to leave behind for your e-bike tour at Lake Louise.",
     heroImage: "/images/blog/packing-guide.jpg",
     author: "Dave Richardson",
-    publishedAt: "2026-02-20",
+    publishedAt: "2026-03-15",
     category: "Planning",
     tags: [
-      "what to wear",
       "packing list",
-      "e-bike tour",
-      "Canadian Rockies",
+      "what to wear",
       "preparation",
-      "gear",
+      "Lake Louise",
+      "Canadian Rockies",
     ],
-    readTime: "9 min read",
+    readTime: "6 min read",
     content: `
-      <p>The Canadian Rockies are not your average cycling destination. At 1,400 metres elevation, the sun is stronger, the air is thinner, and the weather can shift from bluebird skies to hailstorm in thirty minutes. What you wear and pack for your e-bike tour matters more than you might think.</p>
+      <p>Mountain weather changes fast. At Lake Louise — sitting at 1,700+ metres — you can start a ride in sunshine and hit a cold wind within an hour. Here is what to wear and pack so you are comfortable all day.</p>
 
-      <p>After guiding hundreds of riders through the mountains, we have seen every clothing mistake in the book — from jeans-and-flip-flops to full spandex racing kits. This guide will help you get it exactly right.</p>
+      <h2 id="clothing">What to Wear</h2>
 
-      <h2 id="the-golden-rule">The Golden Rule: Dress in Layers</h2>
-
-      <p>Mountain weather is dynamic. You might start your ride at 8 degrees Celsius, warm up to 22 degrees by midday, and face a sudden 15-degree drop if clouds roll in. Layering lets you adapt without carrying a suitcase on your bike.</p>
-
-      <p>The three-layer system works perfectly for e-biking:</p>
+      <h3>The Layering System</h3>
+      <p>Dress in layers that you can add or remove as conditions change:</p>
 
       <ul>
-        <li><strong>Base layer:</strong> Manages moisture against your skin</li>
-        <li><strong>Mid layer:</strong> Provides warmth</li>
-        <li><strong>Outer layer:</strong> Protects against wind and rain</li>
+        <li><strong>Base layer:</strong> Moisture-wicking shirt (synthetic or merino wool). Avoid cotton — it holds sweat and gets cold fast.</li>
+        <li><strong>Mid layer:</strong> Light fleece or insulated jacket. You will want this at Moraine Lake (1,884m) even on a warm day.</li>
+        <li><strong>Outer layer:</strong> Packable windbreaker or rain jacket. Mountain showers are common and brief — a light shell keeps you dry without overheating.</li>
       </ul>
 
-      <p>On warm summer days, you might ride in just the base layer with the outer layer stuffed in a bag. On cool mornings or shoulder season rides, you will appreciate all three. The key is having options.</p>
-
-      <h2 id="clothing-guide">What to Wear: The Complete Clothing Guide</h2>
-
-      <h3>Top Half</h3>
-
-      <p><strong>Base layer (essential):</strong> A moisture-wicking synthetic or merino wool t-shirt. Cotton is the worst choice — it absorbs sweat, stays wet, and becomes cold. Any athletic shirt or hiking shirt will work. Merino wool is ideal because it wicks, regulates temperature, and resists odour.</p>
-
-      <p><strong>Mid layer (carry with you):</strong> A lightweight fleece, softshell, or insulated vest. On an e-bike, you generate less body heat than on a traditional bike (because the motor is doing some of the work), so you cool down faster on stops and descents. A packable fleece weighing 200-300 grams provides insurance against chill.</p>
-
-      <p><strong>Outer layer (essential):</strong> A lightweight, packable windbreaker or rain jacket. This is the single most important piece of clothing you can bring. Even on sunny days, wind in the Bow Valley can be biting, and afternoon showers are common in July and August. Look for a jacket that is windproof, water-resistant, and packs down small enough to fit in a handlebar bag or small backpack.</p>
-
-      <h3>Bottom Half</h3>
-
-      <p><strong>Best option:</strong> Comfortable athletic pants, hiking pants, or lightweight leggings. Look for stretchy, moisture-wicking fabric with a comfortable waistband. Avoid anything that restricts your pedalling motion.</p>
-
-      <p><strong>Acceptable:</strong> Shorts (in warm weather). If you choose shorts, consider a slightly longer cut — a proper cycling short or hiking short that sits above the knee works well. Very short athletic shorts can lead to chafing on longer rides.</p>
-
-      <p><strong>Avoid:</strong> Jeans (heavy, restrictive, uncomfortable when wet), dress pants, skirts, or anything with prominent seams in the saddle area. Also avoid very loose or baggy pants that could catch on the bike chain or pedals.</p>
-
-      <p><strong>Padded cycling shorts:</strong> Not necessary for most e-bike tours. Because e-bikes have wider, more comfortable saddles than road bikes and the assist reduces the time spent standing on the pedals, most riders are comfortable in regular athletic clothing. For rides over 3 hours, padded shorts can add comfort, but they are not essential.</p>
-
-      <h3>Feet</h3>
-
-      <p><strong>Best option:</strong> Closed-toe athletic shoes, hiking shoes, or trail runners. You want a shoe with a firm sole (for efficient pedalling), a comfortable fit, and adequate ankle support. Running shoes work well.</p>
-
-      <p><strong>Acceptable:</strong> Sneakers or casual athletic shoes with a flat sole.</p>
-
-      <p><strong>Avoid:</strong> Sandals, flip-flops, dress shoes, heels, or any open-toed footwear. Your feet are close to the ground, the chain, and the trail surface. Open-toed shoes are a safety hazard and will be uncomfortable on the pedals.</p>
-
-      <p><strong>Socks:</strong> Moisture-wicking athletic socks. Wool or synthetic blends are best. Bring an extra pair in case your feet get wet.</p>
-
-      <h3>Head and Hands</h3>
-
-      <p><strong>Helmet:</strong> Provided by your tour operator. Most operators offer properly fitted helmets as part of the tour package. If you have a preferred helmet, you are welcome to bring your own.</p>
-
-      <p><strong>Sunglasses:</strong> Essential. The mountain sun is intense, and glare off the pavement, water, and snow-covered peaks can be blinding. Polarized lenses are ideal. Secure them with a strap so they do not fly off on bumpy sections.</p>
-
-      <p><strong>Buff or neck gaiter:</strong> Versatile and lightweight, a buff can serve as sun protection, a headband, ear warmth, or dust mask. One of the most useful multi-purpose items you can carry.</p>
-
-      <p><strong>Lightweight gloves:</strong> Not essential in summer but valuable on cool mornings, descents, and shoulder season rides. Full-finger cycling gloves also protect your hands in the unlikely event of a fall.</p>
-
-      <h2 id="what-to-pack">What to Pack: The Essential Gear List</h2>
-
-      <h3>Must-Have Items</h3>
+      <h3>Lower Body</h3>
       <ul>
-        <li><strong>Sunscreen (SPF 50+):</strong> UV radiation is significantly stronger at mountain altitudes. Apply liberally before the ride and bring the bottle for reapplication. Pay attention to your neck, ears, and the backs of your hands — areas often missed.</li>
-        <li><strong>Water:</strong> Bring at least 1 litre, more for full-day rides. A hydration pack or water bottle that fits in the bike's cage both work. There are no water fountains on most trails.</li>
-        <li><strong>Snacks:</strong> Energy bars, trail mix, dried fruit, or whatever fuels you. Even on short rides, the combination of altitude and activity can make you hungry.</li>
-        <li><strong>Lip balm with SPF:</strong> Your lips will thank you. The combination of sun, wind, and dry mountain air cracks lips quickly.</li>
-        <li><strong>Small backpack or handlebar bag:</strong> You need somewhere to carry your layers, snacks, and water. A lightweight daypack (15-20 litres) is ideal. Some tour operators provide handlebar bags or panniers.</li>
+        <li><strong>Shorts or leggings</strong> — whatever you are comfortable cycling in. Padded cycling shorts are nice but not necessary on an e-bike (you will not be grinding uphill).</li>
+        <li><strong>Long pants</strong> available for cooler mornings or if you prefer them for hiking.</li>
       </ul>
 
-      <h3>Strongly Recommended</h3>
+      <h3>Footwear</h3>
       <ul>
-        <li><strong>Camera or phone with charged battery:</strong> You will want photos. Cold temperatures drain batteries faster, so start with a full charge. A waterproof phone case is a smart investment.</li>
-        <li><strong>Bear spray:</strong> Recommended for any activity in bear country. Your guide will carry some, but having your own is prudent. Available at outdoor shops in Canmore and Banff for around $40-$50. Make sure you know how to use it before you need it.</li>
-        <li><strong>Bug spray:</strong> Mosquitoes and blackflies can be fierce in June and July, especially near water. A DEET-based repellent or treated clothing helps.</li>
-        <li><strong>Identification and park pass:</strong> Carry photo ID and your Parks Canada pass if riding in the national park.</li>
-        <li><strong>Cash or credit card:</strong> For a coffee or meal stop in Banff or Canmore.</li>
+        <li><strong>Closed-toe shoes with good grip.</strong> Hiking shoes or trail runners are ideal — they work on the bike and on the Rockpile Trail.</li>
+        <li>Avoid flip-flops, sandals, or heels. You will be pedalling and hiking.</li>
       </ul>
 
-      <h3>Nice to Have</h3>
+      <h3>Accessories</h3>
       <ul>
-        <li><strong>Action camera:</strong> A GoPro or similar mounted on your helmet or handlebars captures the ride beautifully.</li>
-        <li><strong>Binoculars:</strong> Compact binoculars are excellent for wildlife viewing from a safe distance.</li>
-        <li><strong>Portable charger:</strong> For phones that double as cameras and GPS devices.</li>
-        <li><strong>Tissues or a small pack of wet wipes:</strong> Trail bathrooms are rare.</li>
+        <li><strong>Sunglasses</strong> — essential at altitude where UV is stronger</li>
+        <li><strong>Sunscreen (SPF 30+)</strong> — reapply at rest stops</li>
+        <li><strong>Light gloves</strong> — mornings can be cold, especially on the downhill return</li>
+        <li><strong>Buff or neck gaiter</strong> — versatile for wind, sun, or warmth</li>
       </ul>
 
-      <h2 id="seasonal-adjustments">Seasonal Adjustments</h2>
-
-      <h3>Early Season (Mid-May to Mid-June)</h3>
-      <p>The most variable conditions of the year. Morning temperatures can be near freezing, warming to 15-20 degrees by afternoon. Snow is still possible at any time. Pack warm: full base layer, mid layer, and a quality outer layer. Warm gloves and a toque (beanie) are recommended. Trails may have wet or icy patches in shaded areas.</p>
-
-      <h3>Peak Summer (Late June to August)</h3>
-      <p>Warm days (20-30 degrees), cool mornings (8-15 degrees), and the highest chance of afternoon thunderstorms. The base layer and outer shell are your essentials. Sunscreen becomes critical. Start rides early to avoid the afternoon heat and storm risk.</p>
-
-      <h3>Fall Season (September to Mid-October)</h3>
-      <p>Beautiful but cooling rapidly. Days range from 5-18 degrees, and frost is common in the mornings. Full layering system is essential. The reward is golden larch trees, thin crowds, and crystal-clear mountain air. This is arguably the most beautiful time to ride.</p>
-
-      <h2 id="common-mistakes">Common Mistakes to Avoid</h2>
+      <h2 id="what-to-bring">What to Bring</h2>
 
       <ul>
-        <li><strong>Underestimating the sun:</strong> "It does not feel that hot" is what everyone says before they get sunburned at altitude. Apply sunscreen even on cloudy days — UV penetrates cloud cover.</li>
-        <li><strong>Overdressing:</strong> It is easier to remove layers than to wish you had different clothes. Bring layers you can adjust rather than one heavy jacket.</li>
-        <li><strong>Cotton everything:</strong> Cotton absorbs moisture, dries slowly, and becomes cold. One cotton t-shirt is fine if you have a synthetic layer to switch into.</li>
-        <li><strong>New shoes:</strong> Do not break in new shoes on a multi-hour ride. Wear footwear that is already comfortable.</li>
-        <li><strong>No rain gear:</strong> "The forecast says sunny" does not mean much in the mountains. Bring a packable rain jacket every time, no exceptions.</li>
-        <li><strong>Forgetting the small things:</strong> Sunscreen, lip balm, and sunglasses are the items most often forgotten and most regretted.</li>
+        <li><strong>Small daypack or saddle bag</strong> — for layers, snacks, and camera</li>
+        <li><strong>Phone + charger</strong> — for photos (and GPS if self-guided)</li>
+        <li><strong>Camera</strong> — if your phone is not enough for you</li>
+        <li><strong>Water bottle</strong> — we provide water, but your own bottle is handy</li>
+        <li><strong>Parks Canada pass</strong> — required to be in Banff National Park. Buy online in advance.</li>
       </ul>
 
-      <h2 id="what-your-tour-provides">What Your Tour Operator Provides</h2>
+      <h2 id="we-provide">What We Provide</h2>
 
-      <p>Most guided e-bike tours include:</p>
+      <p>Do not worry about gear — we have you covered:</p>
       <ul>
-        <li>The e-bike itself</li>
-        <li>A properly fitted helmet</li>
-        <li>Basic toolkit and repair supplies</li>
-        <li>Water (at minimum a bottle; some provide hydration packs)</li>
-        <li>Snacks</li>
-        <li>Bear spray (carried by the guide)</li>
+        <li>Premium e-bike (fitted to your size)</li>
+        <li>Helmet (mandatory for all ages on e-bikes in Alberta)</li>
+        <li>Bike lock</li>
+        <li>Bear spray (seasonal, carried by your guide)</li>
+        <li>Brunch and/or packed lunch (depending on tour)</li>
+        <li>Water and trail snacks</li>
+        <li>Trail map and route guide</li>
       </ul>
 
-      <p>Check with your specific operator before the ride so you know what is covered and what you need to bring yourself. A good operator will send you a detailed packing list when you book.</p>
-
-      <h2 id="final-checklist">Final Checklist</h2>
-
-      <p>Print this or screenshot it for tour day:</p>
+      <h2 id="leave-behind">What to Leave Behind</h2>
 
       <ul>
-        <li>Moisture-wicking base layer top</li>
-        <li>Packable mid layer (fleece or vest)</li>
-        <li>Windproof/waterproof outer layer</li>
-        <li>Comfortable athletic pants or shorts</li>
-        <li>Closed-toe athletic shoes</li>
-        <li>Moisture-wicking socks (+ spare pair)</li>
-        <li>Sunglasses (polarized, with strap)</li>
-        <li>Sunscreen SPF 50+</li>
-        <li>Lip balm with SPF</li>
-        <li>Water (1+ litres)</li>
-        <li>Snacks</li>
-        <li>Small backpack or bag</li>
-        <li>Camera / charged phone</li>
-        <li>Bear spray (recommended)</li>
-        <li>Bug spray (June-July)</li>
-        <li>ID and park pass</li>
-        <li>Cash or card</li>
+        <li><strong>Heavy backpacks</strong> — you do not need a full hiking pack for an e-bike tour</li>
+        <li><strong>Cotton clothing</strong> — it stays wet and gets cold. Synthetics dry fast.</li>
+        <li><strong>Valuables</strong> — leave them locked in your car at the ski resort</li>
+        <li><strong>Drones</strong> — not permitted in Banff National Park without a special permit</li>
       </ul>
 
-      <p>Dress right, pack smart, and you will be free to focus on what matters: the mountains, the ride, and the memories you are about to make.</p>
+      <h2 id="weather">A Note on Mountain Weather</h2>
+
+      <p>At Lake Louise, daytime summer temperatures typically range from 15 to 25 degrees Celsius in the valley, but can be 5 to 10 degrees cooler at Moraine Lake. Rain showers can appear quickly and usually pass within 30 minutes. The golden rule: <strong>bring one more layer than you think you need.</strong></p>
+
+      <p>We monitor weather conditions before every tour and will contact you if conditions require schedule adjustments. Safety always comes first.</p>
+    `,
+  },
+  {
+    slug: "how-fit-do-you-need-to-be-for-ebike-tour",
+    title: "How Fit Do You Need to Be for an E-Bike Tour? (Honest Answer)",
+    excerpt:
+      "The honest answer: not very. Here is what the e-bike motor actually does, who our riders really are, and why fitness anxiety is the wrong reason to skip this experience.",
+    heroImage: "/images/blog/fitness-guide.jpg",
+    author: "Dave Richardson",
+    publishedAt: "2026-03-10",
+    category: "Planning",
+    tags: [
+      "fitness",
+      "beginners",
+      "first time",
+      "e-bike tour",
+      "seniors",
+      "accessibility",
+    ],
+    readTime: "6 min read",
+    content: `
+      <p>This is the question we hear most — usually from people who want to come but are worried they will hold the group back. So here is the honest answer.</p>
+
+      <h2 id="honest-answer">The Honest Answer</h2>
+
+      <p><strong>If you can ride a regular bicycle for five minutes, you can complete any of our tours.</strong></p>
+
+      <p>That is not marketing speak. The e-bike motor is doing the hard work. You are pedalling, yes — but the motor amplifies every pedal stroke. Hills that would leave you gasping on a regular bike feel like flat ground. Headwinds disappear. The altitude (1,700+ metres at Lake Louise) that makes traditional cycling genuinely hard becomes a non-factor.</p>
+
+      <h2 id="what-motor-does">What the Motor Actually Does</h2>
+
+      <p>Our e-bikes have multiple assist levels — from Eco (light help) to Turbo (the motor does most of the work). Most riders use a medium setting and describe the experience as "a gentle pedal." You choose how much effort you want to put in.</p>
+
+      <ul>
+        <li><strong>Eco mode:</strong> Light assistance. You feel the hills but they are manageable. Best for experienced cyclists who want exercise.</li>
+        <li><strong>Trail mode:</strong> Moderate assistance. Hills feel like flat ground. This is what most of our guests use.</li>
+        <li><strong>Turbo mode:</strong> Maximum assistance. The motor does 80% of the work. For steep sections or when you need a break.</li>
+      </ul>
+
+      <p>The climb to Moraine Lake gains about 153 metres over 12 kilometres. On Turbo mode, it feels like riding on flat pavement. On Trail mode, it feels like a gentle incline. On Eco mode, it feels like a moderate hill. You pick your adventure.</p>
+
+      <h2 id="real-riders">Who Actually Rides With Us</h2>
+
+      <p>Our riders range from 12 to 75+ years old. Here is what our customer base really looks like:</p>
+
+      <ul>
+        <li><strong>Couples where one person is fit and the other is not.</strong> E-bikes equalize the difference. Both people can ride side by side and enjoy the same experience.</li>
+        <li><strong>Active retirees (55-75)</strong> who love the outdoors but find traditional cycling too demanding at altitude.</li>
+        <li><strong>Families with teenagers</strong> looking for an activity everyone can do together.</li>
+        <li><strong>People who have not ridden a bike in years</strong> but want to experience Lake Louise and Moraine Lake without the hiking commitment.</li>
+        <li><strong>Experienced cyclists</strong> who want to cover more ground or ride with less-fit partners.</li>
+      </ul>
+
+      <h2 id="what-helps">What Actually Helps</h2>
+
+      <p>Instead of worrying about fitness, focus on these:</p>
+
+      <ul>
+        <li><strong>Balance:</strong> Can you sit on a bike and pedal without falling over? That is all you need.</li>
+        <li><strong>Comfort with braking:</strong> You need to be able to brake and stop. Our safety briefing covers this in five minutes.</li>
+        <li><strong>Reasonable mobility:</strong> You need to get on and off the bike, and walk the Rockpile Trail stairs (0.8 km, about 120 steps).</li>
+      </ul>
+
+      <p>You do <strong>not</strong> need: cycling experience, gym fitness, cardiovascular endurance, leg strength, or the ability to ride long distances unassisted.</p>
+
+      <h2 id="still-nervous">Still Nervous?</h2>
+
+      <p>Start with the <a href="/tours/lake-louise-morning-experience">Lake Louise Morning Experience</a> — our easiest tour. It is 8 km round trip, mostly gentle terrain, with brunch and a relaxed lakeside walk. If that goes well (it will), you can always book the <a href="/tours/lake-louise-grand-loop">Grand Loop</a> next time.</p>
+
+      <p>Or <a href="/contact">contact us</a> with your specific concerns. We have helped hundreds of first-timers and know exactly how to make it comfortable. The last thing we want is for fitness anxiety to keep you from one of the best experiences in the Canadian Rockies.</p>
     `,
   },
 ];
-
-export const blogCategories = [
-  "All",
-  "Trail Guides",
-  "Planning",
-  "Rules & Regulations",
-] as const;
-
-export type BlogCategory = (typeof blogCategories)[number];

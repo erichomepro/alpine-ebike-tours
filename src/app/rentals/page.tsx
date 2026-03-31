@@ -25,7 +25,7 @@ const rentalOptions = [
     name: "Half Day",
     duration: "4 hours",
     description:
-      "Perfect for a morning or afternoon ride. Enough time to ride the Legacy Trail one-way or explore the Horseshoe Loop and Canmore trails.",
+      "Perfect for a morning or afternoon ride. Enough time to ride to Lake Louise and back, or explore the trails around the ski resort area.",
     prices: bikes.map((b) => ({ bike: b.name, price: b.pricePerHalfDay })),
     popular: false,
   },
@@ -33,7 +33,7 @@ const rentalOptions = [
     name: "Full Day",
     duration: "8 hours",
     description:
-      "The sweet spot. Ride the Legacy Trail round-trip, explore multiple trails, stop for lunch in Banff, and still have time for photos. Most riders choose this.",
+      "The sweet spot. Ride to Lake Louise and Moraine Lake, explore the car-free roads, and still have time for the Rockpile Trail and a lakeside lunch. Most riders choose this.",
     prices: bikes.map((b) => ({ bike: b.name, price: b.pricePerFullDay })),
     popular: true,
   },

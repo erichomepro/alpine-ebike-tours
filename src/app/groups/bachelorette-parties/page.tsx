@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "The ultimate bachelorette party in the Canadian Rockies. E-bike tours with champagne toasts, pro photography, sunset rides, and Instagram-worthy mountain views. Groups of 4+.",
   keywords: [
-    "bachelorette party Banff",
-    "bachelorette activities Canmore",
+    "bachelorette party Lake Louise",
+    "bachelorette activities Canadian Rockies",
     "bachelorette e-bike tour",
-    "bridal party Banff",
+    "bridal party Lake Louise",
     "bachelorette party ideas Canadian Rockies",
     "unique bachelorette party Alberta",
   ],

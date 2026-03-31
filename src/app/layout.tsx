@@ -28,15 +28,15 @@ export const metadata: Metadata = {
     template: "%s | Alpine E-Bike Tours",
   },
   description:
-    "Experience the Canadian Rockies on premium guided e-bike tours. No experience needed. Explore Banff, Canmore, and the Legacy Trail with expert local guides. Book online today.",
+    "E-bike tours at Lake Louise and Moraine Lake. Ride the car-free Moraine Lake Road, see the Twenty Dollar View, and explore Alberta Parks. No experience needed. Book online.",
   keywords: [
-    "e-bike tours Banff",
-    "e-bike tours Canmore",
-    "guided e-bike tours Canadian Rockies",
-    "e-bike rental Banff",
-    "e-bike rental Canmore",
-    "Legacy Trail e-bike",
+    "e-bike tours Lake Louise",
+    "Moraine Lake e-bike",
+    "e-bike tours Canadian Rockies",
+    "Lake Louise Ski Resort summer",
+    "car-free Moraine Lake Road",
     "electric bike tours Alberta",
+    "Rocky to Nordegg Rail Trail",
   ],
   authors: [{ name: "Alpine E-Bike Tours" }],
   creator: "Alpine E-Bike Tours",
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     siteName: "Alpine E-Bike Tours",
     title: "Alpine E-Bike Tours — Ride the Canadian Rockies",
     description:
-      "Guided e-bike tours through Banff and Canmore. No fitness required. Stunning mountain scenery, expert guides, all gear included.",
+      "E-bike tours to Lake Louise and Moraine Lake from the ski resort. No fitness required. Stunning scenery, brunch included, all gear provided.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "E-bike riders on the Legacy Trail with Canadian Rocky Mountains in the background",
+        alt: "E-bike riders at Lake Louise with turquoise water and Rocky Mountains in the background",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alpine E-Bike Tours — Ride the Canadian Rockies",
     description:
-      "Guided e-bike tours through Banff and Canmore. No fitness required.",
+      "E-bike tours to Lake Louise and Moraine Lake. No fitness required.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -83,24 +83,24 @@ const localBusinessSchema = {
   "@id": "https://www.alpineebiketours.com/#organization",
   name: "Alpine E-Bike Tours",
   description:
-    "Guided e-bike tours through the Canadian Rockies. Experience Banff, Canmore, and the Legacy Trail with expert local guides. No experience needed.",
+    "E-bike tours to Lake Louise and Moraine Lake from Lake Louise Ski Resort. Plus weekend rides on the Rocky to Nordegg Rail Trail. No experience needed.",
   url: "https://www.alpineebiketours.com",
   telephone: "+14035551234",
   email: "info@alpineebiketours.com",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Canmore",
+    addressLocality: "Lake Louise",
     addressRegion: "AB",
-    postalCode: "T1W",
+    postalCode: "T0L 1E0",
     addressCountry: "CA",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 51.089,
-    longitude: -115.358,
+    latitude: 51.4419,
+    longitude: -116.1622,
   },
   areaServed: [
-    { "@type": "City", name: "Canmore" },
+    { "@type": "City", name: "Rocky Mountain House" },
     { "@type": "City", name: "Banff" },
     { "@type": "City", name: "Lake Louise" },
     { "@type": "City", name: "Calgary" },

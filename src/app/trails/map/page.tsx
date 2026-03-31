@@ -577,7 +577,7 @@ export default function TrailMapPage() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-3 max-w-xl mx-auto text-white/80"
           >
-            Explore all our e-bike trails in the Canmore-Banff corridor.
+            Explore all our e-bike routes in the Lake Louise area and Alberta Parks.
             Colour-coded by difficulty with 3D terrain.
           </motion.p>
         </div>

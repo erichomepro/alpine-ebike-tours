@@ -18,7 +18,7 @@ const steps = [
     icon: MapPin,
     title: "Meet Your Guide",
     description:
-      "Arrive at our Canmore shop, meet your guide, and get fitted with your perfect e-bike. We handle everything — just show up ready to smile.",
+      "Arrive at Lake Louise Ski Resort, enjoy brunch, and get fitted with your perfect e-bike. We handle everything — just show up ready to smile.",
     color: "bg-primary",
   },
   {

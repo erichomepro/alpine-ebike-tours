@@ -4,7 +4,7 @@ import { FAQContent } from "./faq-content";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
-    "Everything you need to know about e-bike tours in Banff and Canmore. E-bike basics, tour details, what to bring, safety info, and more.",
+    "Everything you need to know about e-bike tours at Lake Louise and in Alberta Parks. E-bike basics, tour details, what to bring, safety info, and more.",
 };
 
 const faqCategories = [
@@ -29,7 +29,7 @@ const faqCategories = [
       {
         question: "Are e-bikes allowed in Banff National Park?",
         answer:
-          "Yes! Parks Canada allows pedal-assist e-bikes (Class 1) on most paved and designated trails. Our bikes comply with all regulations: pedal-assist only, 500W maximum motor, and 32 km/h speed cutoff. We ride approved trails including the Legacy Trail, Sundance Trail, and Bow Valley Parkway.",
+          "Yes! Parks Canada allows pedal-assist e-bikes (Class 1) on paved and designated trails. Our bikes comply with all regulations: pedal-assist only, 500W maximum motor, and 32 km/h speed cutoff. We ride on Lake Louise Drive and Moraine Lake Road — both paved roads within Banff National Park. Moraine Lake Road is closed to private vehicles but open to bikes, making it one of the best e-bike routes in the Rockies.",
       },
       {
         question: "How fast do e-bikes go?",
@@ -44,17 +44,17 @@ const faqCategories = [
       {
         question: "What's included in the tour?",
         answer:
-          "Everything you need for the ride: a premium e-bike, helmet, safety briefing, expert guide, snacks, water, and a trail-side photo stop. On our half-day and full-day tours, we also include a snack or lunch stop at a local favourite. You just need to show up with comfortable clothes.",
+          "Everything you need for the ride: a premium e-bike, helmet, safety briefing, snacks, and water. Lake Louise tours include brunch at the ski resort restaurant before departure. Full-day and Moraine Lake tours also include a packed gourmet lunch for the trail. You just need to show up with comfortable clothes and a Parks Canada pass.",
       },
       {
         question: "How long are the tours?",
         answer:
-          "We offer tours from 2 hours to a full day. Our most popular option, the Legacy Trail Cruise, is about 3 hours including stops. Half-day tours run 4-5 hours, and full-day adventures are 6-7 hours with a lunch break. Check individual tour pages for exact times.",
+          "We offer tours from 3 hours to a full day. The Lake Louise Morning Experience is 3-4 hours. The Moraine Lake and Rockpile Adventure is 5-6 hours. The Grand Loop (Lake Louise + Moraine Lake) is our full-day experience at 5-6 hours. Our Alberta Parks weekend ride is 3-4 hours. Check individual tour pages for exact schedules.",
       },
       {
         question: "What's the group size?",
         answer:
-          "We cap all tours at 8 riders maximum. This means personal attention from your guide, a quieter experience on the trails, and better wildlife viewing. Most of our tours run with 4-6 guests, which feels like riding with friends rather than a crowd.",
+          "Lake Louise tours accommodate up to 12 riders per departure, with two departures daily. Our Alberta Parks weekend rides cap at 8 riders. Both sizes feel personal — you are not on a massive bus tour. Private tours are available for any group size.",
       },
       {
         question: "Do you offer private tours?",
@@ -94,7 +94,7 @@ const faqCategories = [
       {
         question: "Where do we meet?",
         answer:
-          "The meeting point depends on the tour. Most tours depart from our base in Canmore, and some meet at the Banff Legacy Trail trailhead. You'll receive exact meeting point details, GPS coordinates, and parking information in your booking confirmation email 24 hours before your tour.",
+          "Lake Louise tours meet at the Lake Louise Ski Resort base area parking lot (1 Whitehorn Road, Lake Louise). Free parking is available. Our Alberta Parks weekend tours meet at Chambers Creek Provincial Recreation Area on Highway 11, 30 km west of Rocky Mountain House. Exact GPS coordinates and directions are included in your booking confirmation.",
       },
       {
         question: "Do you provide helmets?",

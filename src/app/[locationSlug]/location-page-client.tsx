@@ -219,7 +219,7 @@ function RelatedTours({ location }: { location: Location }) {
           <p className="mt-4 text-foreground/60 max-w-2xl mx-auto">
             {location.type === "tours"
               ? `Expert-led rides through the best trails around ${location.city}. All gear included, no experience needed.`
-              : `Want a guide to show you the best routes? These tours depart from our Canmore shop.`}
+              : `Want a guide to show you the best routes? Check out our guided tour options.`}
           </p>
         </motion.div>
 
@@ -441,7 +441,7 @@ function LocationCTA({ location }: { location: Location }) {
           <p className="mt-4 text-white/70 text-lg max-w-2xl mx-auto">
             {location.type === "tours"
               ? `Book your guided e-bike tour and experience the Canadian Rockies like never before. All equipment included, no experience needed.`
-              : `Pick up a premium e-bike from our Canmore shop and explore ${location.city} at your own pace. Helmets, locks, and trail maps included.`}
+              : `Pick up a premium e-bike and explore ${location.city} at your own pace. Helmets, locks, and trail maps included.`}
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">

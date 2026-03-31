@@ -1,17 +1,17 @@
 import Link from "next/link";
 
 const tourLinks = [
-  { name: "Legacy Trail Adventure", href: "/tours/legacy-trail-adventure" },
-  { name: "Johnston Canyon E-Bike & Hike", href: "/tours/johnston-canyon-ebike-hike" },
-  { name: "Sunset Golden Hour Ride", href: "/tours/sunset-golden-hour" },
-  { name: "Bow Valley Explorer", href: "/tours/bow-valley-explorer" },
+  { name: "Lake Louise Grand Loop", href: "/tours/lake-louise-grand-loop" },
+  { name: "Lake Louise Morning Experience", href: "/tours/lake-louise-morning-experience" },
+  { name: "Moraine Lake & Rockpile", href: "/tours/moraine-lake-rockpile-adventure" },
+  { name: "Rail Trail & Trestle Ride", href: "/tours/rail-trail-trestle-ride" },
   { name: "All Tours", href: "/tours" },
 ];
 
 const trailLinks = [
-  { name: "Legacy Trail", href: "/trails/legacy-trail" },
-  { name: "Bow Valley Parkway", href: "/trails/bow-valley-parkway" },
-  { name: "Montane Traverse", href: "/trails/montane-traverse" },
+  { name: "Lake Louise Grand Loop", href: "/trails/lake-louise-grand-loop" },
+  { name: "Moraine Lake Road", href: "/trails/moraine-lake-road" },
+  { name: "Rocky-Nordegg Rail Trail", href: "/trails/rocky-nordegg-rail-trail" },
   { name: "Interactive Trail Map", href: "/trails/map" },
 ];
 
@@ -40,10 +40,10 @@ export function Footer() {
             </Link>
             <p className="mt-4 text-sm text-cream/70 leading-relaxed">
               Guided e-bike tours through the Canadian Rockies. Experience Banff
-              and Canmore like never before — no fitness required.
+              like never before — no fitness required.
             </p>
             <div className="mt-6 space-y-2 text-sm text-cream/70">
-              <p>Canmore & Banff, Alberta</p>
+              <p>Lake Louise & Alberta Parks</p>
               <p>
                 <a
                   href="mailto:hello@alpineebiketours.ca"

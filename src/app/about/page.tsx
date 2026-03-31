@@ -64,7 +64,7 @@ const commitments = [
     icon: Heart,
     title: "Local to the Core",
     description:
-      "We live here. We hire local guides, partner with Canmore and Banff businesses, and put a portion of every booking toward trail maintenance and conservation projects in the Bow Valley.",
+      "We hire local guides, partner with Lake Louise and Alberta Parks businesses, and put a portion of every booking toward trail maintenance and conservation projects in the Canadian Rockies.",
   },
 ];
 
@@ -135,7 +135,7 @@ export default function AboutPage() {
               Parents with young kids. Couples where one partner was a cyclist and the other wasn&apos;t. Retirees who used to ride decades ago. Visitors who just wanted to <em>feel</em> the mountains, not conquer them.
             </p>
             <p>
-              Then Dave rode his first e-bike on the Legacy Trail between Canmore and Banff, and everything clicked. The same stunning views, the same fresh mountain air, the same thrill of cresting a ridge and seeing a turquoise lake appear below -- but without the barrier. No lung-burning climbs. No &ldquo;I can&apos;t keep up.&rdquo; Just pure, joyful riding through some of the most beautiful terrain on Earth.
+              Then Dave rode his first e-bike on the road to Lake Louise, and everything clicked. The same stunning views, the same fresh mountain air, the same thrill of cresting a ridge and seeing turquoise water appear below -- but without the barrier. No lung-burning climbs. No &ldquo;I can&apos;t keep up.&rdquo; Just pure, joyful riding through some of the most beautiful terrain on Earth.
             </p>
             <p>
               Alpine E-Bike Tours was born from that ride. Dave put together a small fleet of premium e-bikes, recruited local guides who know every trail and every bear-safe spot, and started taking people on the rides of their lives.
@@ -204,7 +204,7 @@ export default function AboutPage() {
               {
                 name: "Dave",
                 role: "Founder & Lead Guide",
-                bio: "Born-and-raised Bow Valley local with 15+ years of guiding experience. Certified Wilderness First Responder. Knows every trail, every viewpoint, and every spot where the elk like to hang out.",
+                bio: "Passionate about the Canadian Rockies with years of guiding experience. Certified Wilderness First Responder. Knows every trail, every viewpoint, and every spot where the elk like to hang out.",
                 certifications: ["Wilderness First Responder", "CPR/AED Certified", "Parks Canada Licensed Guide"],
               },
               {

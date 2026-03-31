@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   description:
     "Celebrate birthdays, family reunions, anniversaries, and special occasions with a private guided e-bike tour in the Canadian Rockies. Fully customizable itinerary for any group size.",
   keywords: [
-    "private e-bike tours Banff",
-    "custom group rides Canmore",
-    "birthday party Banff",
+    "private e-bike tours Lake Louise",
+    "custom group rides Canadian Rockies",
+    "birthday party Lake Louise",
     "family reunion activities Canadian Rockies",
-    "private guided tours Canmore",
+    "private guided tours Lake Louise",
     "special occasion tours Alberta",
   ],
   openGraph: {

@@ -48,7 +48,7 @@ function getLocalBusinessSchema(location: ReturnType<typeof getLocationBySlug>) 
     telephone: "+1-403-000-0000",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Canmore",
+      addressLocality: "Lake Louise",
       addressRegion: "AB",
       addressCountry: "CA",
     },

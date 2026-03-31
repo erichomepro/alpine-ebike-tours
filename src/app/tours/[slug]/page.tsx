@@ -55,7 +55,7 @@ function getTourJsonLd(tour: (typeof tours)[number]) {
       name: "Alpine E-Bike Tours",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Canmore",
+        addressLocality: "Lake Louise",
         addressRegion: "AB",
         addressCountry: "CA",
       },

@@ -4,13 +4,13 @@ import { CorporateContent } from "./corporate-content";
 export const metadata: Metadata = {
   title: "Corporate Team Building E-Bike Tours",
   description:
-    "Build stronger teams on two wheels. Guided e-bike team building experiences in Banff and Canmore with zero fitness barriers, branded photos, and post-ride socials. Groups of 8+.",
+    "Build stronger teams on two wheels. Guided e-bike team building at Lake Louise with zero fitness barriers, branded photos, and meals included. Groups of 8+.",
   keywords: [
-    "corporate team building Banff",
-    "team building activities Canmore",
-    "corporate retreat Canadian Rockies",
+    "corporate team building Lake Louise",
+    "team building activities Canadian Rockies",
+    "corporate retreat Lake Louise",
     "team building e-bike tours",
-    "corporate events Banff",
+    "corporate events Alberta",
     "outdoor team building Alberta",
   ],
   openGraph: {
@@ -30,20 +30,20 @@ const jsonLd = {
   url: "https://www.alpineebiketours.com/groups/corporate-team-building",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Canmore",
+    addressLocality: "Lake Louise",
     addressRegion: "AB",
     addressCountry: "CA",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 51.089,
-    longitude: -115.38,
+    latitude: 51.4419,
+    longitude: -116.1622,
   },
   priceRange: "$150-$225 per person",
-  areaServed: ["Canmore", "Banff", "Canadian Rockies"],
+  areaServed: ["Lake Louise", "Banff", "Canadian Rockies"],
   openingHours: "Mo-Su 08:00-19:00",
   telephone: "+14035551234",
-  image: "https://www.alpineebiketours.com/images/tours/legacy-trail-hero.jpg",
+  image: "https://www.alpineebiketours.com/images/stock/lake-louise-chateau.jpg",
 };
 
 export default function CorporateTeamBuildingPage() {

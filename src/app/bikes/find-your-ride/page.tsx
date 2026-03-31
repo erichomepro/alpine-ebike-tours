@@ -107,7 +107,7 @@ function getRecommendation(answers: Record<number, string>): Recommendation {
   const interest = answers[2];
   const duration = answers[3];
 
-  // Score each tour
+  // Tours: 0=Grand Loop, 1=Morning Experience, 2=Moraine Lake, 3=Rail Trail
   let tourIndex = 0;
   let bikeIndex = 0;
   let matchPercent = 92;
@@ -116,38 +116,38 @@ function getRecommendation(answers: Record<number, string>): Recommendation {
   if (experience === "beginner") {
     bikeIndex = 2; // Cannondale comfort
     if (duration === "short") {
-      tourIndex = 2; // Sunset
+      tourIndex = 1; // Lake Louise Morning Experience
       reason =
-        "The Sunset Golden Hour Ride is perfect for first-timers — short, stunning, and unforgettable. The Cannondale step-through makes it effortless.";
+        "The Lake Louise Morning Experience is perfect for first-timers — brunch at the ski resort, a gentle 8 km ride, and a lakeside walk at one of the most famous lakes in the world.";
       matchPercent = 97;
     } else {
-      tourIndex = 0; // Legacy Trail
+      tourIndex = 2; // Moraine Lake
       reason =
-        "The Legacy Trail is our flagship ride — fully paved, breathtaking views, and the e-bike handles every hill. A perfect first experience.";
+        "The Moraine Lake ride is unforgettable — a car-free road to the Twenty Dollar View, with the e-bike handling the climb so you arrive fresh and energized.";
       matchPercent = 95;
     }
   } else if (experience === "advanced" || interest === "challenge") {
     bikeIndex = 1; // Trek Powerfly
-    tourIndex = 1; // Johnston Canyon
+    tourIndex = 0; // Grand Loop
     reason =
-      "You want adventure — the Johnston Canyon combo tour delivers. Ride the Bow Valley Parkway then hike to thundering waterfalls. The Trek Powerfly handles anything.";
+      "You want the full experience — the Grand Loop takes you to Lake Louise AND Moraine Lake in one epic day. Brunch, lakeside walks, the Rockpile Trail, and a thrilling downhill return.";
     matchPercent = 94;
   } else {
     bikeIndex = 0; // Specialized Vado SL
     if (interest === "photography" || interest === "views") {
-      tourIndex = 2; // Sunset
+      tourIndex = 2; // Moraine Lake
       reason =
-        "The Golden Hour Ride is made for moments. Golden light on the mountains, champagne at the summit, and professional photos included. Pure magic.";
+        "Moraine Lake is the most photographed spot in the Rockies for a reason. The Rockpile Trail delivers the iconic Twenty Dollar View, and the car-free ride there is pure peace.";
       matchPercent = 96;
     } else if (duration === "full" || interest === "wildlife") {
-      tourIndex = 3; // Bow Valley
+      tourIndex = 0; // Grand Loop
       reason =
-        "The Bow Valley Explorer takes you off the beaten path — hidden viewpoints, wildlife corridors, and mountain vistas most tourists never see.";
+        "The Grand Loop is our signature experience — Lake Louise, Moraine Lake, the Twenty Dollar View, brunch, packed lunch, and the best downhill ride in the Rockies.";
       matchPercent = 93;
     } else {
-      tourIndex = 0; // Legacy Trail
+      tourIndex = 1; // Morning Experience
       reason =
-        "The Legacy Trail is our most popular ride for a reason — the views are iconic, the ride is smooth, and the Vado SL makes it effortless.";
+        "The Lake Louise Morning Experience is our most popular ride — brunch at the resort, a scenic ride to the lake, and a relaxed lakeside walk. Simple, stunning, perfect.";
       matchPercent = 95;
     }
   }

@@ -51,7 +51,7 @@ const benefits = [
     icon: Coffee,
     title: "Post-Ride Social",
     description:
-      "Every ride ends at a local Canmore spot where the team can unwind, share stories, and keep the energy going. We handle the reservation.",
+      "Every ride ends back at the ski resort where the team can unwind at the restaurant, share stories, and keep the energy going.",
   },
 ];
 
@@ -63,7 +63,7 @@ const packages = [
     minimum: "Minimum 8 riders",
     duration: "3-4 hours",
     description:
-      "Perfect for a team afternoon out. An energizing ride through the Bow Valley followed by a casual group social.",
+      "Perfect for a team afternoon out. An energizing ride to Lake Louise followed by brunch at the ski resort.",
     includes: [
       "Premium e-bike and helmet",
       "Dedicated group guide",

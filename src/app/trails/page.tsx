@@ -79,8 +79,8 @@ export default function TrailsPage() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-6 max-w-2xl mx-auto text-lg text-white/80"
           >
-            From the iconic Legacy Trail to hidden singletrack through montane
-            forest — discover the best e-bike trails in the Canadian Rockies.
+            From the car-free Moraine Lake Road to the historic Rocky-Nordegg
+            Rail Trail — discover the best e-bike routes in the Canadian Rockies.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

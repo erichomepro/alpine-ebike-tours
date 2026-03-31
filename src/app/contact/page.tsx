@@ -21,12 +21,12 @@ const fadeUp = {
 };
 
 const tourOptions = [
-  "Legacy Trail Cruise (Easy)",
-  "Bow Valley Explorer (Moderate)",
-  "Spray Valley Adventure (Challenging)",
+  "Lake Louise Morning Experience (Easy)",
+  "Moraine Lake & Rockpile Adventure (Moderate)",
+  "Lake Louise Grand Loop (Full Day)",
+  "Rail Trail & Trestle Ride (Alberta Parks)",
   "Private / Custom Tour",
-  "E-Bike Rental Only",
-  "Group Booking (8+)",
+  "Group Booking",
   "Not sure yet",
 ];
 
@@ -255,8 +255,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-slate">Location</h3>
                   <p className="mt-1 text-foreground/70 leading-relaxed">
-                    Canmore &amp; Banff, Alberta<br />
-                    Canadian Rockies
+                    Lake Louise Ski Resort &amp; Alberta Parks<br />
+                    Canadian Rockies, Alberta
                   </p>
                   <p className="mt-1 text-sm text-foreground/50">
                     Exact meeting points provided upon booking
@@ -370,14 +370,14 @@ export default function ContactPage() {
           <motion.div {...fadeUp}>
             <div className="rounded-2xl bg-white border border-cream-dark overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39856.29024396!2d-115.38!3d51.089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5370ca45910c4afd%3A0x4df75e5e34e84a3c!2sCanmore%2C%20AB!5e0!3m2!1sen!2sca!4v1711814400000!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9938.5!2d-116.1622!3d51.4419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5370e576b0b1a12d%3A0xc4e9e14fbb0e2a2a!2sThe%20Lake%20Louise%20Ski%20Resort!5e0!3m2!1sen!2sca!4v1711814400000!5m2!1sen!2sca"
                 width="100%"
                 height="320"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Alpine E-Bike Tours — Canmore, Alberta"
+                title="Alpine E-Bike Tours — Lake Louise Ski Resort, Alberta"
                 className="rounded-2xl"
               />
             </div>

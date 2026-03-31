@@ -31,9 +31,9 @@ export function Newsletter() {
             Get the Free Trail Guide
           </h2>
           <p className="mt-4 text-foreground/70 leading-relaxed max-w-lg mx-auto">
-            Download our PDF guide to the best e-bike trails in Banff and
-            Canmore — including insider tips, seasonal recommendations, and
-            packing checklists. Plus get exclusive offers and trail updates.
+            Download our PDF guide to e-biking at Lake Louise and Moraine
+            Lake — including route details, packing checklists, and insider
+            tips. Plus get exclusive early bird offers and trail updates.
           </p>
 
           {submitted ? (

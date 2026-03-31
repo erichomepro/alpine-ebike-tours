@@ -17,8 +17,8 @@ export const bikes: Bike[] = [
     },
     images: ["/images/bikes/vado-sl-hero.jpg"],
     bestFor: [
-      "Legacy Trail",
-      "Scenic paved routes",
+      "Lake Louise Drive",
+      "Moraine Lake Road",
       "Couples",
       "Beginners",
       "All-day rides",
@@ -31,7 +31,7 @@ export const bikes: Bike[] = [
     name: "Trek Powerfly FS",
     type: "Trail / Off-Road",
     description:
-      "When the trail gets rough, the Powerfly gets going. Full suspension front and rear soaks up roots, rocks, and gravel washboard like they're not even there. The Bosch Performance CX motor delivers powerful, responsive assist that makes steep climbs feel flat. Built for the trails around Canmore Nordic Centre and the Montane Traverse — anywhere the path turns to dirt and the views get wilder.",
+      "When the trail gets rough, the Powerfly gets going. Full suspension front and rear soaks up roots, rocks, and gravel washboard like they're not even there. The Bosch Performance CX motor delivers powerful, responsive assist that makes steep climbs feel flat. Built for the Rocky to Nordegg Rail Trail and gravel sections — anywhere the path turns to dirt and the views get wilder.",
     specs: {
       motor: "Bosch Performance CX (250W, 85 Nm torque)",
       battery: "625Wh PowerTube",
@@ -42,9 +42,9 @@ export const bikes: Bike[] = [
     },
     images: ["/images/bikes/powerfly-hero.jpg"],
     bestFor: [
-      "Montane Traverse",
-      "Nordic Centre trails",
+      "Rocky-Nordegg Rail Trail",
       "Gravel paths",
+      "Alberta Parks routes",
       "Experienced riders",
       "Off-road adventure",
     ],
@@ -67,8 +67,8 @@ export const bikes: Bike[] = [
     },
     images: ["/images/bikes/adventure-neo-hero.jpg"],
     bestFor: [
-      "Legacy Trail",
-      "Horseshoe Loop",
+      "Lake Louise Drive",
+      "Morning Experience",
       "Seniors",
       "First-time riders",
       "Comfort seekers",

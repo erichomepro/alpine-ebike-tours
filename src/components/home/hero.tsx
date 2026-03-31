@@ -46,7 +46,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
           className="mt-4 text-base sm:text-lg text-accent-light font-semibold"
         >
-          Tours from $175 &middot; Canmore & Banff
+          Tours from $149 &middot; Lake Louise & Alberta Parks
         </motion.p>
 
         <motion.div

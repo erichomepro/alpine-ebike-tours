@@ -4,14 +4,14 @@ import { GroupsContent } from "./groups-content";
 export const metadata: Metadata = {
   title: "Group Adventures in the Rockies",
   description:
-    "Plan the perfect group e-bike adventure in Banff and Canmore. Corporate team building, bachelorette parties, private events, and custom group rides with dedicated guides.",
+    "Plan the perfect group e-bike adventure at Lake Louise and in Alberta Parks. Corporate team building, bachelorette parties, private events, and custom group rides.",
   keywords: [
-    "group e-bike tours Banff",
-    "corporate team building Canmore",
-    "bachelorette party Banff",
+    "group e-bike tours Lake Louise",
+    "corporate team building Canadian Rockies",
+    "bachelorette party Lake Louise",
     "private e-bike tours Canadian Rockies",
-    "group activities Canmore",
-    "team building activities Banff",
+    "group activities Alberta",
+    "team building activities Lake Louise",
   ],
   openGraph: {
     title: "Group Adventures in the Rockies | Alpine E-Bike Tours",
