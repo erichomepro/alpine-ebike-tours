@@ -51,7 +51,7 @@ export function Footer() {
             {/* Social */}
             <div className="mt-6">
               <a
-                href="https://www.facebook.com/alpineebiketours"
+                href="https://www.facebook.com/share/g/1K9KRrKzcn/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-cream/70 hover:text-accent transition-colors"
