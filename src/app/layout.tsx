@@ -129,7 +129,7 @@ const localBusinessSchema = {
     "https://schema.org/SportsActivityLocation",
   ],
   sameAs: [
-    "https://facebook.com/alpineebiketours",
+    "https://www.facebook.com/share/g/1K9KRrKzcn/",
     "https://instagram.com/alpineebiketours",
   ],
 };

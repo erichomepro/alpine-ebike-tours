@@ -340,7 +340,7 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-slate mb-3">Follow Along</h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://facebook.com/alpineebiketours"
+                    href="https://www.facebook.com/share/g/1K9KRrKzcn/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 hover:bg-primary/20 transition-colors"
