@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   MapPin,
@@ -327,14 +328,14 @@ export function LakeLouiseContent() {
               {...fadeUp}
               className="order-2 lg:order-1 rounded-2xl overflow-hidden bg-white shadow-lg aspect-[4/3]"
             >
-              <div className="w-full h-full bg-gradient-to-br from-blue-200/40 to-teal-200/40 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Camera className="h-16 w-16 text-primary/40 mx-auto" />
-                  <p className="mt-4 text-foreground/50 text-sm">
-                    Moraine Lake — the Twenty Dollar View
-                  </p>
-                </div>
-              </div>
+              <Image
+                src="/images/stock/moraine-lake-road.jpg"
+                alt="The car-free road to Moraine Lake through the Canadian Rockies with the Ten Peaks in the background"
+                fill
+                unoptimized
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </motion.div>
             <motion.div {...fadeUp} className="order-1 lg:order-2">
               <p className="text-accent font-semibold text-sm uppercase tracking-wide">
