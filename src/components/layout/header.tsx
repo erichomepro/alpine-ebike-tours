@@ -59,10 +59,10 @@ export function Header() {
               <span>(403) 555-1234</span>
             </a>
             <Link
-              href="/book"
+              href="/contact"
               className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-dark transition-colors"
             >
-              Book Now
+              Contact Us
             </Link>
           </div>
 

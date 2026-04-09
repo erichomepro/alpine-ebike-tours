@@ -20,7 +20,7 @@ export async function generateMetadata({
 
   return {
     title: `${tour.name} — Guided E-Bike Tour`,
-    description: `${tour.tagline}. ${tour.duration}, ${tour.distance}. From $${tour.price}/person. Includes e-bike, helmet, guide, and all gear. Book online today.`,
+    description: `${tour.tagline}. ${tour.duration}, ${tour.distance}. Includes e-bike, helmet, guide, and all gear. Contact us to book.`,
     openGraph: {
       title: `${tour.name} | Alpine E-Bike Tours`,
       description: tour.tagline,
@@ -46,8 +46,6 @@ function getTourJsonLd(tour: (typeof tours)[number]) {
     touristType: "Cyclists",
     offers: {
       "@type": "Offer",
-      price: tour.price,
-      priceCurrency: "CAD",
       availability: "https://schema.org/InStock",
     },
     provider: {

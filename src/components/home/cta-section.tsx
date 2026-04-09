@@ -27,7 +27,7 @@ export function CTASection() {
           className="mt-6 text-lg text-white/80 leading-relaxed"
         >
           Small groups, expert guides, premium e-bikes, and all gear included.
-          Book your spot and experience the Canadian Rockies like never before.
+          Get in touch and experience the Canadian Rockies like never before.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ export function CTASection() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Link
-            href="/book"
+            href="/contact"
             className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
           >
-            Book Now
+            Contact Us
           </Link>
           <Link
             href="/contact"

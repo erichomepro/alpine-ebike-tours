@@ -81,14 +81,11 @@ export function TourCard({ tour, index = 0 }: TourCardProps) {
             </span>
           </div>
 
-          {/* Price & Rating */}
+          {/* Rating */}
           <div className="mt-4 flex items-center justify-between pt-4 border-t border-cream-dark">
-            <div>
-              <span className="text-2xl font-bold text-primary">
-                ${tour.price}
-              </span>
-              <span className="text-sm text-foreground/50 ml-1">/person</span>
-            </div>
+            <span className="text-sm font-semibold text-primary">
+              Contact for pricing
+            </span>
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1">
                 <Star className="h-4 w-4 fill-accent text-accent" />

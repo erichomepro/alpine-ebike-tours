@@ -118,16 +118,11 @@ export default function ToursPage() {
                         </span>
                       </div>
 
-                      {/* Price */}
+                      {/* Rating */}
                       <div className="mt-4 flex items-center justify-between pt-4 border-t border-cream-dark">
-                        <div>
-                          <span className="text-2xl font-bold text-primary">
-                            ${tour.price}
-                          </span>
-                          <span className="text-sm text-foreground/50 ml-1">
-                            /person
-                          </span>
-                        </div>
+                        <span className="text-sm font-semibold text-primary">
+                          Contact for pricing
+                        </span>
                         <div className="flex items-center gap-1">
                           <Star className="h-4 w-4 fill-accent text-accent" />
                           <span className="text-sm font-semibold text-slate">
@@ -156,10 +151,10 @@ export default function ToursPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/book"
+              href="/contact"
               className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-base font-semibold shadow-md hover:shadow-lg transition-all duration-200"
             >
-              Book Now
+              Inquire About Tours
             </Link>
             <Link
               href="/contact"

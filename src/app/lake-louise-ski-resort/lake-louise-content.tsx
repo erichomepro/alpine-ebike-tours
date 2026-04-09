@@ -255,8 +255,7 @@ export function LakeLouiseContent() {
 
             <div className="mt-6 flex items-center justify-between pt-6 border-t border-cream-dark">
               <div>
-                <span className="text-3xl font-bold text-primary">$275</span>
-                <span className="text-sm text-foreground/50 ml-1">/person</span>
+                <span className="text-sm font-semibold text-primary">Contact for pricing</span>
               </div>
               <div className="text-sm text-foreground/50">
                 Two departures daily: 8:00 AM & 12:00 PM

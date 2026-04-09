@@ -123,7 +123,7 @@ const localBusinessSchema = {
       validThrough: "2026-10-31",
     },
   ],
-  priceRange: "$149-$275",
+  priceRange: "Contact for pricing",
   additionalType: [
     "https://schema.org/TouristAttraction",
     "https://schema.org/SportsActivityLocation",

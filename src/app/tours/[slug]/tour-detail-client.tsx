@@ -89,7 +89,7 @@ function getFaqs(tour: Tour) {
           : "A moderate level of fitness is recommended. The e-bike assists significantly, but there are some sections that require a bit more effort. If you can walk for an hour comfortably, you will be fine.",
     },
     {
-      q: "What is included in the price?",
+      q: "What is included?",
       a: `Everything you need: ${tour.included.join(", ")}. Just bring comfortable clothing and a sense of adventure.`,
     },
     {
@@ -213,10 +213,9 @@ export function TourDetailClient({ tour, relatedTours }: TourDetailClientProps) 
               <span className="font-semibold text-slate">{tour.rating}</span>
             </div>
             <div className="text-right">
-              <span className="text-2xl font-bold text-primary">
-                ${tour.price}
+              <span className="text-sm font-semibold text-primary">
+                Contact for pricing
               </span>
-              <span className="text-foreground/50 ml-1">/person</span>
             </div>
           </div>
         </div>
@@ -423,81 +422,35 @@ export function TourDetailClient({ tour, relatedTours }: TourDetailClientProps) 
                   className="bg-white rounded-2xl shadow-lg p-6 border border-cream-dark"
                 >
                   <div className="text-center mb-6">
-                    <span className="text-3xl font-bold text-primary">
-                      ${tour.price}
-                    </span>
-                    <span className="text-foreground/50 ml-1">/person</span>
-                  </div>
-
-                  {/* Date Picker Placeholder */}
-                  <div className="mb-4">
-                    <label className="block text-sm font-medium text-slate mb-2">
-                      Select Date
-                    </label>
-                    <div className="flex items-center gap-2 p-3 rounded-lg border border-cream-dark bg-cream text-foreground/50 cursor-pointer hover:border-primary/30 transition-colors">
-                      <Calendar className="h-5 w-5" />
-                      <span>Choose your date</span>
-                    </div>
-                  </div>
-
-                  {/* Guest Count */}
-                  <div className="mb-6">
-                    <label className="block text-sm font-medium text-slate mb-2">
-                      Number of Riders
-                    </label>
-                    <div className="flex items-center justify-between p-3 rounded-lg border border-cream-dark">
-                      <button
-                        onClick={() => setGuests(Math.max(1, guests - 1))}
-                        className="w-10 h-10 rounded-full bg-cream hover:bg-cream-dark flex items-center justify-center transition-colors"
-                        aria-label="Decrease guest count"
-                      >
-                        <Minus className="h-4 w-4" />
-                      </button>
-                      <span className="text-lg font-semibold text-slate">
-                        {guests} {guests === 1 ? "rider" : "riders"}
-                      </span>
-                      <button
-                        onClick={() =>
-                          setGuests(Math.min(tour.maxGroupSize, guests + 1))
-                        }
-                        className="w-10 h-10 rounded-full bg-cream hover:bg-cream-dark flex items-center justify-center transition-colors"
-                        aria-label="Increase guest count"
-                      >
-                        <Plus className="h-4 w-4" />
-                      </button>
-                    </div>
-                    <p className="text-xs text-foreground/40 mt-1">
-                      Max {tour.maxGroupSize} per group
+                    <h3 className="text-lg font-bold text-slate">
+                      Interested in this tour?
+                    </h3>
+                    <p className="text-sm text-foreground/60 mt-1">
+                      Get in touch and we&apos;ll help you plan your ride
                     </p>
                   </div>
 
-                  {/* Price Calculator */}
-                  <div className="mb-6 p-4 rounded-lg bg-cream">
-                    <div className="flex justify-between text-sm text-foreground/60 mb-2">
-                      <span>
-                        ${tour.price} x {guests}{" "}
-                        {guests === 1 ? "rider" : "riders"}
-                      </span>
-                      <span>${tour.price * guests}</span>
+                  <div className="mb-4 p-4 rounded-lg bg-cream text-sm text-foreground/60 space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Users className="h-4 w-4 text-primary" />
+                      <span>Small groups — max {tour.maxGroupSize} riders</span>
                     </div>
-                    <div className="flex justify-between font-semibold text-slate pt-2 border-t border-cream-dark">
-                      <span>Total</span>
-                      <span className="text-primary text-lg">
-                        ${tour.price * guests} CAD
-                      </span>
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-4 w-4 text-primary" />
+                      <span>{tour.duration}</span>
                     </div>
                   </div>
 
-                  {/* Book CTA */}
+                  {/* Contact CTA */}
                   <Link
-                    href={`/book?tour=${tour.slug}&guests=${guests}`}
+                    href={`/contact?tour=${encodeURIComponent(tour.name)}`}
                     className="block w-full text-center rounded-xl bg-accent hover:bg-accent-dark text-white px-6 py-4 text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
                   >
-                    Book This Tour
+                    Inquire About This Tour
                   </Link>
 
                   <p className="text-xs text-foreground/40 text-center mt-3">
-                    Free cancellation up to 48 hours before
+                    All gear and guide included
                   </p>
 
                   {/* Social Proof */}
@@ -555,20 +508,19 @@ export function TourDetailClient({ tour, relatedTours }: TourDetailClientProps) 
         </section>
       )}
 
-      {/* Sticky Mobile Book CTA */}
+      {/* Sticky Mobile Contact CTA */}
       <div className="fixed bottom-0 inset-x-0 z-40 lg:hidden bg-white/95 backdrop-blur-sm border-t border-cream-dark p-4 safe-area-inset-bottom">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <span className="text-xl font-bold text-primary">
-              ${tour.price}
+            <span className="text-sm font-semibold text-slate">
+              {tour.duration} &middot; {tour.distance}
             </span>
-            <span className="text-sm text-foreground/50 ml-1">/person</span>
           </div>
           <Link
-            href={`/book?tour=${tour.slug}`}
+            href={`/contact?tour=${encodeURIComponent(tour.name)}`}
             className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-3 text-base font-semibold shadow-md transition-all duration-200 min-h-[46px] flex items-center"
           >
-            Book This Tour
+            Inquire Now
           </Link>
         </div>
       </div>

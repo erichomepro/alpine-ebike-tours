@@ -86,10 +86,10 @@ export function Hero() {
             View All Tours
           </Link>
           <Link
-            href="/book"
+            href="/contact"
             className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white px-8 py-4 text-lg font-semibold transition-all duration-200"
           >
-            Book Now — From $99
+            Get in Touch
           </Link>
         </motion.div>
       </div>
