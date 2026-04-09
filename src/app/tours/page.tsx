@@ -18,7 +18,7 @@ export default function ToursPage() {
     <>
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-primary-dark via-primary to-slate py-24 sm:py-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/tours/legacy-trail-hero.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/stock/legacy-trail-hero.jpg')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/80 to-slate/90" />
         <div className="relative z-10 mx-auto max-w-4xl text-center">
           <motion.h1

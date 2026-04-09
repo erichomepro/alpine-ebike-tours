@@ -2,6 +2,155 @@ import { Tour } from "@/types";
 
 export const tours: Tour[] = [
   // =============================================
+  // EDMONTON RIVER VALLEY (2026 Season — ACTIVE)
+  // North Saskatchewan River Valley trails
+  // =============================================
+  {
+    slug: "edmonton-river-valley-ride",
+    name: "Edmonton River Valley E-Bike Tour",
+    tagline:
+      "Ride North America's largest urban parkland — 160 km of trails along the North Saskatchewan River",
+    description:
+      "Edmonton's River Valley is the largest stretch of connected urban parkland in North America — and it's spectacular on an e-bike. This guided tour follows paved multi-use trails along the North Saskatchewan River, through ancient ravines, past historic landmarks, and across pedestrian bridges with skyline views. You'll ride through Hawrelak Park, past the Muttart Conservatory pyramids, along the Terwillegar Park trails, and through the Gold Bar ravine. The e-bike makes the valley's hills effortless, so you arrive at every viewpoint fresh and smiling. Packed lunch included, enjoyed at a riverside picnic spot.",
+    price: 99,
+    duration: "2.5-3 hours",
+    distance: "~20 km",
+    difficulty: "easy",
+    rating: 4.9,
+    reviewCount: 0,
+    heroImage: "/images/stock/hero-edmonton-river-valley.jpg",
+    gallery: [],
+    included: [
+      "Premium e-bike rental",
+      "Helmet & safety gear",
+      "Packed lunch & water",
+      "Trail map & route guide",
+      "Professional guide",
+    ],
+    highlights: [
+      "North Saskatchewan River Valley — North America's largest urban parkland",
+      "160+ km of interconnected multi-use trails",
+      "Hawrelak Park, Muttart Conservatory, and historic Fort Edmonton viewpoints",
+      "Pedestrian bridges with downtown Edmonton skyline views",
+      "Terwillegar Park and Gold Bar Park ravine trails",
+      "River valley lookouts and riverside picnic lunch",
+    ],
+    meetingPoint:
+      "Hawrelak Park main parking lot, Edmonton (Groat Road entrance)",
+    maxGroupSize: 10,
+    minAge: 12,
+    season: "May — October (2026)",
+    trail: "edmonton-river-valley",
+    schedules: [
+      {
+        name: "Morning Valley Ride",
+        startTime: "9:30 AM",
+        endTime: "12:30 PM",
+        stops: [
+          {
+            time: "9:30 AM",
+            title: "Meet at Hawrelak Park",
+            description:
+              "Arrive at Hawrelak Park main lot. Bike fitting, safety briefing, and an overview of the River Valley trail network.",
+            type: "meeting",
+          },
+          {
+            time: "10:00 AM",
+            title: "Ride the River Valley trails",
+            description:
+              "Head east along the North Saskatchewan River through lush valley forest. The paved multi-use trail follows the river through ancient ravines.",
+            type: "ride",
+          },
+          {
+            time: "10:30 AM",
+            title: "Muttart Conservatory viewpoint",
+            description:
+              "Stop at the iconic glass pyramids of the Muttart Conservatory. Cross the Cloverdale pedestrian bridge for a stunning view of the downtown skyline reflected in the river.",
+            type: "photo",
+          },
+          {
+            time: "11:00 AM",
+            title: "Gold Bar Park ravine",
+            description:
+              "Ride through the Gold Bar ravine — one of the most scenic stretches of the River Valley. Towering cottonwoods, wildlife sightings, and a feeling of wilderness minutes from downtown.",
+            type: "ride",
+          },
+          {
+            time: "11:30 AM",
+            title: "Riverside picnic lunch",
+            description:
+              "Packed lunch at a riverside picnic spot. Watch the river flow past while you refuel — no rush, no crowds.",
+            type: "meal",
+          },
+          {
+            time: "12:00 PM",
+            title: "Return ride through Terwillegar",
+            description:
+              "Loop back through the west valley trails and Terwillegar Park. Different views on the return — the valley reveals new angles from every direction.",
+            type: "ride",
+          },
+          {
+            time: "12:30 PM",
+            title: "Back at Hawrelak Park",
+            description:
+              "Return bikes and gear. You've just explored the largest urban river valley parkland on the continent.",
+            type: "return",
+          },
+        ],
+      },
+      {
+        name: "Golden Hour Ride",
+        startTime: "5:00 PM",
+        endTime: "8:00 PM",
+        stops: [
+          {
+            time: "5:00 PM",
+            title: "Meet at Hawrelak Park",
+            description:
+              "Evening departure — golden light, cooler temps, and the valley at its most beautiful.",
+            type: "meeting",
+          },
+          {
+            time: "5:30 PM",
+            title: "Ride west to Terwillegar",
+            description:
+              "Warm evening light through the valley. The trails are quieter in the evening — more wildlife, fewer crowds.",
+            type: "ride",
+          },
+          {
+            time: "6:00 PM",
+            title: "Terwillegar Park lookout",
+            description:
+              "Climb to the ridge lookout above the river. Panoramic views of the valley stretching east toward downtown in golden light.",
+            type: "photo",
+          },
+          {
+            time: "6:30 PM",
+            title: "River loop and sunset viewpoint",
+            description:
+              "Follow the river east. Stop at a prime sunset viewpoint where the North Saskatchewan bends — the light on the water is unforgettable.",
+            type: "photo",
+          },
+          {
+            time: "7:15 PM",
+            title: "Picnic dinner riverside",
+            description:
+              "Light dinner and drinks at a riverside spot as the sun sets over the valley. This is Edmonton at its finest.",
+            type: "meal",
+          },
+          {
+            time: "7:45 PM",
+            title: "Return to Hawrelak Park",
+            description:
+              "Easy ride back in the twilight. The valley glows in the last light of the day.",
+            type: "ride",
+          },
+        ],
+      },
+    ],
+  },
+
+  // =============================================
   // ALBERTA PARKS OPERATION (2026 Season — ACTIVE)
   // Chambers Creek / David Thompson Country
   // =============================================

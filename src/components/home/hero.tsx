@@ -1,71 +1,95 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Mountain, MapPin, Zap } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative h-screen min-h-[600px] max-h-[900px] flex items-center justify-center overflow-hidden">
-      {/* Background — placeholder for drone video */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-dark via-primary to-slate">
-        {/* When drone video is ready, replace with:
-        <video autoPlay muted loop playsInline poster="/images/hero-poster.jpg" className="absolute inset-0 w-full h-full object-cover">
-          <source src="/videos/hero-drone.mp4" type="video/mp4" />
-        </video>
-        */}
-        <div className="absolute inset-0 bg-[url('/images/stock/hero-mountains.jpg')] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+    <section className="relative h-screen min-h-[650px] max-h-[950px] flex items-end overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/stock/hero-edmonton-river-valley.jpg"
+          alt="E-bike riders on a trail overlooking Edmonton's North Saskatchewan River Valley"
+          fill
+          priority
+          unoptimized
+          className="object-cover"
+        />
+        {/* Cinematic gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="font-[var(--font-heading)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight"
+      {/* Content — bottom-aligned for cinematic feel */}
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-20 sm:pb-24">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="inline-flex items-center gap-2 rounded-full bg-accent/90 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-white mb-6"
         >
-          Ride the Rockies
+          <Zap className="h-4 w-4" />
+          2026 Season Now Booking
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+          className="font-[var(--font-heading)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] max-w-4xl"
+        >
+          Explore Alberta
+          <br />
+          <span className="text-accent-light">by E-Bike</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="mt-6 text-lg sm:text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          className="mt-5 text-lg sm:text-xl text-white/85 max-w-xl leading-relaxed"
         >
-          Guided e-bike tours through the Canadian Rockies.
-          <br className="hidden sm:block" />
-          No experience needed. All gear included.
+          Guided tours through the Rockies, river valleys, and historic rail
+          trails. Premium e-bikes handle the hills — you enjoy the views.
         </motion.p>
 
-        <motion.p
+        {/* Quick stats */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.35 }}
-          className="mt-4 text-base sm:text-lg text-accent-light font-semibold"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.45 }}
+          className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/70"
         >
-          Tours from $149 &middot; Lake Louise & Alberta Parks
-        </motion.p>
+          <span className="flex items-center gap-1.5">
+            <Mountain className="h-4 w-4 text-accent-light" />
+            Canadian Rockies &amp; River Valleys
+          </span>
+          <span className="flex items-center gap-1.5">
+            <MapPin className="h-4 w-4 text-accent-light" />
+            Edmonton &middot; Lake Louise &middot; Alberta Parks
+          </span>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+          className="mt-8 flex flex-col sm:flex-row items-start gap-4"
         >
           <Link
             href="/tours"
-            className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 min-w-[200px]"
+            className="rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
           >
-            Explore Tours
+            View All Tours
           </Link>
           <Link
             href="/book"
-            className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white px-8 py-4 text-lg font-semibold transition-all duration-200 min-w-[200px]"
+            className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white px-8 py-4 text-lg font-semibold transition-all duration-200"
           >
-            Book Now
+            Book Now — From $99
           </Link>
         </motion.div>
       </div>
@@ -75,13 +99,13 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ChevronDown className="h-8 w-8 text-white/60" />
+          <ChevronDown className="h-8 w-8 text-white/50" />
         </motion.div>
       </motion.div>
     </section>
