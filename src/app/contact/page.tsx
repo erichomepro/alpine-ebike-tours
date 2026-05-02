@@ -40,6 +40,8 @@ function ContactForm() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   function validate() {
     const newErrors: Record<string, string> = {};
@@ -53,14 +55,37 @@ function ContactForm() {
     return newErrors;
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const validationErrors = validate();
     setErrors(validationErrors);
     if (Object.keys(validationErrors).length > 0) return;
 
-    // TODO: Wire to API / Resend / Supabase
-    setSubmitted(true);
+    setSending(true);
+    setSubmitError("");
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          phone: formState.phone,
+          tour_interest: formState.tourInterest,
+          message: formState.message,
+          page: typeof window !== "undefined" ? window.location.pathname : "/contact",
+        }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data?.error || "Submission failed");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please email info@alpineebiketours.com directly.");
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -181,12 +206,19 @@ function ContactForm() {
         {errors.message && <p className="mt-1 text-sm text-error">{errors.message}</p>}
       </div>
 
+      {submitError && (
+        <div className="rounded-xl border border-error/40 bg-error/10 px-4 py-3 text-sm text-error">
+          {submitError}
+        </div>
+      )}
+
       {/* Submit */}
       <button
         type="submit"
-        className="w-full rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 min-h-[46px]"
+        disabled={sending}
+        className="w-full rounded-xl bg-accent hover:bg-accent-dark text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 min-h-[46px] disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Message
+        {sending ? "Sending..." : "Send Message"}
       </button>
     </form>
   );
