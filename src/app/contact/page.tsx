@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
@@ -42,6 +42,11 @@ function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  /* Honeypot. Hidden from people, irresistible to naive bots that fill every
+     input they find. A ref, so typing into it never re-renders the form. */
+  const honeypotRef = useRef<HTMLInputElement>(null);
+  /* When this form mounted, so the server can see how long it was on screen. */
+  const mountedAtRef = useRef(Date.now());
 
   function validate() {
     const newErrors: Record<string, string> = {};
@@ -74,6 +79,8 @@ function ContactForm() {
           tour_interest: formState.tourInterest,
           message: formState.message,
           page: typeof window !== "undefined" ? window.location.pathname : "/contact",
+          website: honeypotRef.current?.value ?? "",
+          elapsedMs: Date.now() - mountedAtRef.current,
         }),
       });
       if (!res.ok) {
@@ -114,6 +121,12 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+      {/* Honeypot. Off-screen rather than type="hidden", because bots skip
+          hidden inputs but do fill ones they can find in the DOM. */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>
+        <label htmlFor="website-url">Do not fill this in</label>
+        <input id="website-url" name="website" type="text" ref={honeypotRef} tabIndex={-1} autoComplete="off" defaultValue="" />
+      </div>
       {/* Name */}
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-slate mb-1.5">

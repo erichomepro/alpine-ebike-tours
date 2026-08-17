@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { classify, canonicalEmail } from "@/lib/spam-filter";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,7 +16,42 @@ type LeadBody = {
   tour_interest?: string;
   message?: string;
   page?: string;
+  /** Hidden honeypot. Real users never see it, so any value means a bot. */
+  website?: string;
+  /** Milliseconds between form render and submit, reported by the client. */
+  elapsedMs?: number;
 };
+
+/**
+ * Burst limiter keyed by canonical email, so Gmail dot-variants collapse to one
+ * identity. In-memory: a cold start empties it, which only means a burst may
+ * restart. The content filter is the real defence.
+ */
+const recentByEmail = new Map<string, number[]>();
+const RATE_WINDOW_MS = 60_000;
+const RATE_MAX_IN_WINDOW = 3;
+
+function isRateLimited(email: string): boolean {
+  const key = canonicalEmail(email);
+  const now = Date.now();
+  const hits = (recentByEmail.get(key) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  hits.push(now);
+  recentByEmail.set(key, hits);
+
+  if (recentByEmail.size > 500) {
+    for (const [k, v] of recentByEmail) {
+      if (v.every((t) => now - t >= RATE_WINDOW_MS)) recentByEmail.delete(k);
+    }
+  }
+
+  return hits.length > RATE_MAX_IN_WINDOW;
+}
+
+/** Anti-spam plumbing is not lead data; never store or email it. */
+function stripInternalFields(body: LeadBody): Omit<LeadBody, "website" | "elapsedMs"> {
+  const { website: _website, elapsedMs: _elapsedMs, ...rest } = body;
+  return rest;
+}
 
 function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c] as string);
@@ -71,6 +107,37 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Name, email, and message are required" }, { status: 400 });
   }
 
+  // Spam gate. Returns 200 rather than 4xx on purpose: a bot that sees an error
+  // retunes its payload, one that sees success keeps sending the signature we
+  // already detect. Fails open, because losing one real booking costs more than
+  // forwarding one more spam message.
+  const verdict = classify({
+    name: body.name,
+    email: body.email,
+    phone: body.phone,
+    message: body.message,
+    website: body.website,
+    elapsedMs: body.elapsedMs,
+  });
+  if (verdict.isSpam) {
+    console.warn(
+      { scope: "lead.spam", score: verdict.score, reasons: verdict.reasons, email: body.email },
+      "Submission rejected as spam; not emailed, not stored",
+    );
+    return NextResponse.json({ ok: true });
+  }
+
+  if (isRateLimited(body.email)) {
+    console.warn(
+      { scope: "lead.ratelimit", email: canonicalEmail(body.email) },
+      "Submission rejected as rate limited; not emailed, not stored",
+    );
+    return NextResponse.json({ ok: true });
+  }
+
+  // Keep the narrowed original for rendering; strip only what goes downstream.
+  const lead = stripInternalFields(body) as LeadBody;
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: "Email backend not configured" }, { status: 500 });
@@ -96,7 +163,7 @@ export async function POST(req: Request) {
     </div>
   `;
 
-  const plain = Object.entries(body)
+  const plain = Object.entries(lead)
     .filter(([, v]) => v != null && String(v).trim() !== "")
     .map(([k, v]) => `${k}: ${v}`)
     .join("\n");
@@ -119,13 +186,13 @@ export async function POST(req: Request) {
     });
     if (!res.ok) {
       const detail = await res.text();
-      await backupToSupabase(body);
+      await backupToSupabase(lead);
       return NextResponse.json({ error: "Email send failed", detail }, { status: 502 });
     }
-    await backupToSupabase(body);
+    await backupToSupabase(lead);
     return NextResponse.json({ ok: true });
   } catch (err) {
-    await backupToSupabase(body);
+    await backupToSupabase(lead);
     return NextResponse.json({ error: "Email send failed", detail: String(err) }, { status: 502 });
   }
 }
